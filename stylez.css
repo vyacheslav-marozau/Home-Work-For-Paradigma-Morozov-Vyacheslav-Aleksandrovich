@@ -1,0 +1,480 @@
+* {margin: 0;
+padding: 0;}
+body {
+    background: #fc0 url(images/BG.png) repeat-y; /* Повторение по вертикали */
+}
+
+@font-face {
+     font-family: 'Montserrat';
+    src: url('/fonts/montserrat-regular.eot');
+    src: url('/fonts/montserrat-regular.ttf') format('truetype'),
+    url('/fonts/montserrat-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.menu-main {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    width: 80.3645vw;
+    height: 2.037vh;
+    margin: 4.074vh 10.5208vw 6.1111vh 9.1145vw;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+}
+.menu-main li {
+    /*display: inline;*/
+}
+.homeImage {
+    width: 23px;
+    height: 22px;
+}
+/*@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');*/
+.menu-main li {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+   /* padding-bottom: 20px;*/
+    margin: 0 1.55vw 0 1.55vw;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main .current, .menu-main li:hover{color: #feb386; text-decoration: underline}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+}
+.menu-main li:hover:before, .menu-main .current:before {left: 0;}
+.menu-main li:hover:after, .menu-main .current:after {right: 0;}
+/*
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}*/
+.hat {
+    width: 81.77083333333333vw;
+    height: 13.7037037037037vh;
+    margin: 9.4444vh 9.1145vw 2vh 9.1145vw;
+    padding: 0;
+
+    list-style-type: none;
+    font-size: 12px;
+    text-align: center;
+}
+.hat li {
+    display: inline-block;
+    float: left;
+}
+.description {
+    width: 10.6771vw;
+    display: block;
+}
+.price-catalog {
+    width: 10.6771vw;
+    height: 4.0601vh;
+    display: block;
+    margin: 0 0 0 6.3541vw;
+}
+.iconDisk {
+    width: 2.2838vw;
+    height: 4.0601vh;
+    border-radius: 30px;
+    background-color: #FFD700FF;
+    text-align: center;
+    position: relative;
+}
+.pdfFile {
+    color: #12C868;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.60185vh;
+    height: 1.2037vh;
+    left: 50%;
+    margin-left: -1.1419vw;
+    width: 2.2838vw;
+}
+.pdfDownloadLink {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    color: #1C1C1C;
+    text-decoration: none;
+    border-bottom: 1px dotted #12C868;
+    position: absolute;
+    width: 8.28125vw;
+    height: 1.7592vh;
+    top: 16.783vh;
+    left: 28.75vw;
+}
+.logoImageBlock {
+    margin: 0 3.6458vw 7.7777vh 2.8906vw;
+    width: 14.2708vw;
+    height: 13.7037vh;
+   /* padding:*/
+}
+.answerInMessengers {
+    width: 8.3255vw;
+    height: 6.7981vh;
+}
+.smallDisk {
+    border-radius: 30px;
+    background-color: #12C868;
+    width: 0.2083vw;
+    height: 0.37037vh;
+    display: block;
+    position: absolute;
+    left: 105.5vh;
+}
+.answerOnline {
+    top: 15vh;
+    left: 59.7vw;
+    display: block;
+    position: absolute;
+    margin-bottom: 1.5351vh;
+}
+.messengers {
+    position: absolute;
+    top: 17.3092vh;
+    left: 58.0416vw;
+}
+.messengers img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.viber {
+    background-color: #976FCC;
+    margin-right: 0.7369vw;
+}
+.whatsup {
+    background-color: #12C868;
+    margin-right: 0.7369vw;
+}
+.telegram {
+    background-color: #05A0EB;
+}
+.messengers>li.viber img {
+    width: 1.0046vw;
+    margin-left: -0.5023vw;
+    height: 1.7861vh;
+    margin-top: -0.89305vh;
+}
+.messengers>li.whatsup img {
+    width: 1.038vw;
+    margin-left: -0.519vw;
+    height: 1.8453vh;
+    margin-top: -0.9226vh;
+}
+.messengers>li.telegram img {
+    width: 0.9135vw;
+    margin-left: -0.4567vw;
+    height: 1.299vh;
+    margin-top: -0.6495vh;
+}
+.telefonBlock{
+    margin-left: 6.3619vw;
+}
+.grafikRaboti {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    top: 15vh;
+    left: 74vw;
+}
+.telefon {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 22px;
+    display: block;
+    position: absolute;
+    top: 17vh;
+    left: 73.3vw;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #1C1C1C;
+}
+.callMe {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: #12C868;
+    text-decoration: none;
+    border-bottom: 1px dotted #12C868;
+    display: block;
+    position: absolute;
+    top: 21vh;
+    left: 77.1vw;
+}
+.beauty-rotate {
+    width: 300px;
+    height: 300px;
+    /*border: 4px double #bd6c46;  Рамка */
+    overflow: hidden;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.beauty-rotate:hover {
+    border-radius: 50%;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+.b-popup .b-popup-content{
+    margin: 14.3225vh auto 0vh auto;
+    width: 28.6458vw;
+    height: 60.1851vh;
+    padding:10px;
+    background-color: #c5c5c5;
+    box-shadow: 0px 0px 10px #000;
+
+    /*position: absolute;*/
+    border-radius: 35px;
+    text-align: center;
+}
+.closingCrossLink {
+    float: right;
+     opacity: 0;
+    margin: 0vh 0vw 0vh -1vw;
+    width: 2.5vw;
+    height: 2.5vh;
+    text-decoration: none;
+    color: #808080FF;
+}
+.closingCross {
+    float: right;
+    margin: 0 0 0 0;
+}
+.popUpHeader {
+    position: absolute;
+    width: 18.5416vw;
+    height: 6.8518vh;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1C1C1C;
+    left: 40.7291vw;
+    top: 26.3888vh;
+}
+.popUpHeaderDescription {
+    position: absolute;
+    text-align: center;
+    left: 40.7291vw;
+    width: 18.5416vw;
+    top: 34.3888vh;
+    height: 4.4444vh;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.popUpHeaderGrafikRaboti {
+    position: absolute;
+    text-align: center;
+    left: 40.7291vw;
+    width: 18.5416vw;
+    top: 41.3888vh;
+    height: 1.3888vh;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+.popUpHeaderTypeTelefon {
+    position: absolute;
+    text-align: left;
+    left: 41.6291vw;
+    width: 18.5416vw;
+    top: 45.3888vh;
+    color: #000000;
+}
+.phone_form {
+    position: absolute;
+    text-align: center;
+    left: 40.7291vw;
+    width: 18.5416vw;
+    top: 48.3888vh;
+    height: 1.3888vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.phone_form {
+    /*width: 300px;
+    margin: 50px auto;
+    position: relative;*/
+}
+#user_phone {
+    width: 18.5416vw;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 8px 8px 8px 36px;
+    height: 40px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #363636;
+}
+#user_phone:focus {
+    outline: none;
+    border-color: #363636;
+}
+input#user_phone:-moz-placeholder {
+    color: #363636;
+}
+input#user_phone::-webkit-input-placeholder {
+    color: #363636;
+}
+.user_phone {
+    position: relative;
+}
+/*.user_phone:before {
+    content: "";
+    display: block;
+    height: 40px;
+    color: #363636;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    font-size: 16px;
+}*/
+.btn_submit {
+    height: 4.1666vh;
+    position: absolute;
+    top: 5.3703vh;
+    left: 50px;
+    opacity: 0%;
+    /*background: #363636;
+    color: #fff;*/
+    border: none;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+.btn_submit.disabled {
+    color: #363636;
+    background: #ccc;
+}
+.background_btn_submit {
+    background: #F38120;
+    width: 18.5416vw;
+    height: 7.8703vh;
+    text-align: center;
+    box-shadow: inset 0px 0px 17px rgba(255, 255, 255, 0.25);
+    border-radius: 26.0416vw;
+}
+.callMePopUp {
+    width: 8.0312vw;
+    height: 1.8518vh;
+    margin: 2.8vh 0vw 0vh -7vw;
+    position: absolute;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+}
+
+.agreement {
+
+}
+
+.arrowRigt {
+    position: absolute;
+    top: 6.8vh;
+    left: 15vw;
+}
+
+
+.leftSidebar {
+    width: 11.7187vw;
+    height: 1.8518vh;
+    position: absolute;
+    top: 27.9629vh;
+    left: 9.1145vw;
+    text-align: center;
+}
+.leftSidebar li {
+    list-style-type: none;
+    margin-bottom: 4.4444vh;
+    /*position: absolute;*/
+    width: 161px;
+    height: 88px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #1C1C1C;
+}
+.mainHeader {
+    width: 33.5937vw;
+    height: 23.6111vh;
+    position: absolute;
+    top: 30.9259vh;
+    left: 24.5312vw;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 85px;
+    text-align: center;
+    color: #1C1C1C;
+}
+.mainHeaderDescription {
+    width: 16.8229vw;
+    height: 3.6111vh;
+    position: absolute;
+    top: 56.2962vh;
+    left: 28.3854vw;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #1C1C1C;
+}
