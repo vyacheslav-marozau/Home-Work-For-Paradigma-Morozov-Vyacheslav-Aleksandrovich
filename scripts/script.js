@@ -36,7 +36,7 @@
              }
          });*/
          jQuery('.btn_submit').on('click', function(){
-             var checkboxIsChecked = jQuery(jQuery(this).parent().find(' > .agreement')[0]).is(":checked");
+             var checkboxIsChecked = jQuery(jQuery(this).parent().find('.agreement')[0]).is(":checked");
              var phone = $(".user-phone");
              var phoneVal = phone.val();
              var form = phone.parent('form');

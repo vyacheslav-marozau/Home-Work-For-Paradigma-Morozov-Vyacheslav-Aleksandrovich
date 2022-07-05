@@ -2,96 +2,139 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width">
+    <!--, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylez.css">
     <title>Landing</title>
-   <!-- <script src="https://code.jquery.com/jquery-2.0.2.min.js"></script>-->
+    <!-- <script src="https://code.jquery.com/jquery-2.0.2.min.js"></script>-->
 
 </head>
 <body>
-    <header>
-            <ul class="menu-main">
-                <li class="current"><img src="images/home.svg" class="homeImage" alt="Home Sweet Home"/></li>
-                <li>КАТАЛОГ</li>
-                <li>ПРЕИМУЩЕСТВА</li>
-                <li>ПРИМЕРЫ РАБОТ</li>
-                <li>МОНТАЖ</li>
-                <li>ОТЗЫВЫ</li>
-                <li>ОТВЕТЫ НА ВОПРОСЫ</li>
-                <li>КОНТАКТЫ</li>
-            </ul>
-        <ul class="hat">
-            <li><p class="description"><b>Кровельные и фасадные материалы</b> в Тюмени и области.</p>
-                </br>
-                <p>Профессиональный монтаж
-                с 2010 года.</p>
-            </li>
-            <li>
-                <div class="price-catalog">
-                    <div class="iconDisk">
-                    <span class="pdfFile">Pdf</span>
-                    </div>
-                    <a href="#" class="pdfDownloadLink">Скачать прайс-каталог</a>
-                </div>
-            </li>
-            <li class="logoImageBlock">
-                <img class="logoImage" src="./images/logo-picture.png" />
-            </li>
-            <li class="answerInMessengers">
-                    <span class="smallDisk"></span>
-                    <span class="answerOnline">Отвечаем онлайн</span>
-                <ul class="messengers">
-                    <li class="iconDisk viber"><a title="Должен быть установлен Viber для ПК" href="viber://chat?number=+78002225460"><img class="beauty-rotate" src="images/Viber.png" title="Написать в Телеграм"></a></li>
-                    <li class="iconDisk whatsup"><a href="https://wa.me/88002225460?text=Здравствуйте.%20Вопрос%20по%20поводу%20заказа%20кровли"><img  class="beauty-rotate" src="images/Whatsup.png" title="Написать в WhatsApp"></a></li>
-                    <li class="iconDisk telegram"><a href="https://t.me/nexta_tv"><img  class="beauty-rotate" src="images/Telegram.png" title="Написать в Телеграм"></a></li></li>
-                </ul>
-            </li>
-            <li class="telefonBlock">
-                <span class="grafikRaboti"><b>Пн-Пт</b> 9:00 - 18:00, <b>Сб</b> 10:00 - 18:00</span>
-                <a href="tel:+78142332211" class="telefon">8(800)222-54-60</a>
-                <a href="javascript:PopUpShow()" class="callMe">Позвоните мне</a>
-            </li>
-        </ul>
-
-        <div class="b-popup" id="popup1">
-            <div class="b-popup-content">
-                <a class="closingCrossLink" href="javascript:PopUpHide()"><img src="images/ClosingСross.svg"></a><img class="closingCross" src="images/ClosingСross.svg" title="Close Pop-Up">
+<div class="block">
+    <div class="b-popup" id="popup1">
+        <div class="b-popup-content">
+            <div class="scopes">
+                <a class="closingCrossLink" href="javascript:PopUpHide()">
+                    <img src="images/ClosingСross.svg" />
+                </a>
+                    <img class="closingCross" src="images/ClosingСross.svg" title="Close Pop-Up" />
                 <h1 class="popUpHeader">Быстро оставить заявку</h1>
                 <p class="popUpHeaderDescription">Введите номер, мы позвоним вам в течение 10 минут в рабочее время</p>
-                <p class="popUpHeaderGrafikRaboti">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+               <p class="popUpHeaderGrafikRaboti">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
                 <p class="popUpHeaderTypeTelefon">Введите номер телефона</p>
                 <form action="#" method="post" class="phone_form" id="phone_form">
-
                     <div class="user_phone">
-                        <input type="tel" required placeholder="+7 (___) ___-__-__" id="user_phone" class="user-phone" title="Формат: +7 (096) 999 99 99"/>
+                        <input type="tel" required placeholder="+7 (___) ___-__-__" id="user_phone"
+                               class="user-phone" title="Формат: +7 (096) 999 99 99"/>
                     </div>
                     <div class="background_btn_submit">
                         <input type="submit" class="btn_submit"/> <span class="callMePopUp">Позвоните Мне</span>
-                        <img src="images/ArrowRight.png" alt="Call Me Button" class="arrowRigt" />
+                        <img src="images/ArrowRightNew.png" alt="Stick" class="arrowRight"/>
                     </div>
-                    <input type="checkbox" id=”agreement” class="agreement" checked>
-
-
+                    <div class="agreementFlex">
+                        <input type="checkbox" id=”agreement” class="agreement" checked>
+                        <p class="licenseAgreementBlock" >Нажимая кнопку вы соглашаетесь с
+                            <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=14tlihrpXZk5mxwx1HH3RIxYGDES_Omfd" class="licenseAgreementDownloadLink">
+                                условиями Политики конфиденциальности</a>
+                        </p>
+                    </div>
                 </form>
             </div>
         </div>
-    </header>
-    <section>
-        <ul class="leftSidebar">
-            <li><b>Гарантия от 50 лет</b> на материалы и 5
-                лет на монтаж</li>
-            <li><b>Замер, монтажный проект</b> и еще 4 услуги бесплатно</li>
-            <li><b>Сметы точны</b> до копейки </li>
-            <li><b>Поэтапная оплата,</b> кредит или рассрочка </li>
-            <li><b>Наши крыши в каждом поселке</b> и дачном сообществе региона </li>
-        </ul>
-    </section>
-    <h1 class="mainHeader">Продажа <b>кровельных материалов</b> в Тюмени и Тюменской области</h1>
-    <p class="mainHeaderDescription">и монтаж под ключ</p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="scripts/jquery.maskedinput.min.js"></script>
-    <script src="scripts/script.js"></script>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <header>
+                <ul class="menu-main">
+                    <img src="images/home.svg" class="homeImage" alt="Home Sweet Home"/>
+                    <li>Каталог</li>
+                    <li>Преимущества</li>
+                    <li>Примеры работ</li>
+                    <li>Монтаж</li>
+                    <li>Отзывы</li>
+                    <li>Ответы на вопросы</li>
+                    <li>Контакты</li>
+                </ul>
+                <ul class="hat">
+                    <li class="descriptionContainer"><p class="description"><b>Кровельные и фасадные материалы</b> в Тюмени и области.</p>
+                        <p class="professional">Профессиональный монтаж с 2010 года.</p>
+                    </li>
+                    <li class="price-catalog">
+                        <div class="pdfFile">Pdf</div>
+                        <a href="https://drive.google.com/uc?export=download&confirm=no_antivirus&id=14tlihrpXZk5mxwx1HH3RIxYGDES_Omfd" class="pdfDownloadLink">Скачать прайс-каталог</a>
+                    </li>
+                    <img class="logoImage"src="./images/logo-picture.png"/>
+                    <li class="answerInMessengers">
+                        <div class="answerOnlineBlock">
+                            <div class="smallDisk"></div>
+                            <span class="answerOnline">Отвечаем онлайн</span>
+                        </div>
+                        <ul class="messengers">
+                            <li class="iconDisk viber">
+                                <a title="Должен быть установлен Viber для ПК" href="viber://chat?number=+78002225460">
+                                    <img class="beauty-rotate" src="images/Viber.png" title="Написать в Телеграм" />
+                                </a>
+                            </li>
+                            <li class="iconDisk whatsup">
+                                <a href="https://wa.me/88002225460?text=Здравствуйте.%20Вопрос%20по%20поводу%20заказа%20кровли">
+                                    <img class="beauty-rotate" src="images/Whatsup.png" title="Написать в WhatsApp" />
+                                </a>
+                            </li>
+                            <li class="iconDisk telegram">
+                                <a href="https://t.me/nexta_tv">
+                                    <img class="beauty-rotate" src="images/Telegram.png" title="Написать в Телеграм" />
+                                </a>
+                            </li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="telefonBlock">
+                        <span class="grafikRaboti"><b>Пн-Пт</b> 9:00 - 18:00, <b>Сб</b> 10:00 - 18:00</span>
+                        <a href="tel:+78142332211" class="telefon">8(800)222-54-60</a>
+                        <a href="javascript:PopUpShow()" class="callMe">Позвоните мне</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="mainContentWrapper">
+                <ul class="leftSidebar">
+                    <li><b>Гарантия от 50 лет</b> на материалы и 5 лет на монтаж</li>
+                    <li><b>Замер, монтажный проект</b> и еще 4 услуги бесплатно</li>
+                    <li><b>Сметы точны</b> до копейки</li>
+                    <li><b>Поэтапная оплата,</b> кредит или рассрочка</li>
+                    <li><b>Наши крыши в каждом поселке</b> и дачном сообществе региона</li>
+                </ul>
+                <section class="main-content">
+                    <h1 class="mainHeader">Продажа <b class="boldText">кровельных материалов</b> в Тюмени и Тюменской области </h1>
+                    <div class="mainHeaderRounds">
+                        <div class="greenRound100"></div>
+                        <div class="greenRound75"></div>
+                        <div class="greenRound50"></div>
+                        <div class="greenRound25"></div>
+                        <p class="mainHeaderDescription">и монтаж под ключ</p>
+                    </div>
+                    <div class="buttons">
+                        <div class="backGroundCalculateTheCost">
+                            <span class="calculateTheCostButton">Рассчитать стоимость материалов и монтажа</span>
+                            <img src="images/ArrowTopRightNew.png" alt="Call Me Button" class="arrowTopRight"/>
+                        </div>
+                        <div class="backGroundCheckInForLookingHouses">
+                            <span class="checkInForLookingHousesButton">записаться на просмотр объектов</span>
+                            <img src="images/ArrowTopRightNew.png" alt="Call Me Button" class="arrowTopRightTwoTwo"/>
+                        </div>
+                    </div>
+                    <div class="answerSomeQuestionsContainer">
+                        <img src="images/FingerPrint.jpg" alt="FingerPrint" class="fingerPrint"/>
+                        <p class="answerSomeQuestions"><b class="boldText">Ответьте на несколько вопросов и получите</b>сметную стоимость и 3 подарка за экономию нашего времени</p>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="scripts/jquery.maskedinput.min.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
