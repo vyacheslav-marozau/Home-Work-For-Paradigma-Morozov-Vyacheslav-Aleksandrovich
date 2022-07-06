@@ -35,18 +35,24 @@
                  form.find('.btn_submit').removeAttr('disabled');
              }
          });*/
-         jQuery('.btn_submit').on('click', function(){
-             var checkboxIsChecked = jQuery(jQuery(this).parent().find('.agreement')[0]).is(":checked");
+         jQuery('.btn_submit').on('click', function(e){
+             var checkboxIsChecked = jQuery(jQuery(this).parent().parent().find('.agreementFlex > .agreement')[0]).is(":checked");
              var phone = $(".user-phone");
              var phoneVal = phone.val();
              var form = phone.parent('form');
              console.log(checkboxIsChecked);
-             if ((checkboxIsChecked === true) && (!(phoneVal.indexOf("_") != -1) || phoneVal == '')) {
+             console.log('2:' + (phoneVal.indexOf("_") != -1));
+             console.log('3:' + phoneVal !== '');
+             console.log('2:' + (phoneVal.indexOf("_")));
+             if ((checkboxIsChecked === true) && (phoneVal.indexOf("_") == -1) && phoneVal !== '') {
                  form.find('.btn_submit').removeAttr('disabled');
                  $("#phone_form").submit();
              } else {
                  alert("ВВедите Коректный Номер Телефона и прочитайте соглашение");
                  form.find('.btn_submit').attr('disabled',true);
+                 e.preventDefault();
+                 e.stopPropagation();
+                 return false;
              }
          });
 
