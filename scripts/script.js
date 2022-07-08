@@ -20,67 +20,43 @@
 
          $body
              .find('.user-phone').each(function(){
-             $(this).mask("+7 (999) 999-99-99", {autoсlear: false});
+             $(this).mask("+7 (999) 999-99-99", {autoclear: false});
          });
 
-         /*$body.on('keyup','.user-phone',function(){
-             var phone = $(this),
-                 phoneVal = phone.val(),
-                 form = $(this).parents('form');
-
-             if ( (phoneVal.indexOf("_") != -1) || phoneVal == '' )  {
-                 form.find('.btn_submit').attr('disabled',true);
-             }
-             else {
-                 form.find('.btn_submit').removeAttr('disabled');
-             }
-         });*/
-         jQuery('.btn_submit').on('click', function(e){
+         jQuery('.btn_submit').on('click', function(e) {
              var checkboxIsChecked = jQuery(jQuery(this).parent().parent().find('.agreementFlex > .agreement')[0]).is(":checked");
              var phone = $(".user-phone");
              var phoneVal = phone.val();
              var form = phone.parent('form');
              console.log(checkboxIsChecked);
-             console.log('2:' + (phoneVal.indexOf("_") != -1));
-             console.log('3:' + phoneVal !== '');
+             console.log('2:' + (phoneVal.indexOf("_") == 0));
+             console.log('3:' + phoneVal == '');
              console.log('2:' + (phoneVal.indexOf("_")));
-             if ((checkboxIsChecked === true) && (phoneVal.indexOf("_") == -1) && phoneVal !== '') {
-                 form.find('.btn_submit').removeAttr('disabled');
-                 $("#phone_form").submit();
-             } else {
-                 alert("ВВедите Коректный Номер Телефона и прочитайте соглашение");
+            /* (checkboxIsChecked === true) && phoneVal.indexOf("_") == 0) || */
+             if ((checkboxIsChecked === false) && (phoneVal == '')) {
+                 alert("ВВедите Номер Телефона и прочитайте соглашение");
                  form.find('.btn_submit').attr('disabled',true);
                  e.preventDefault();
                  e.stopPropagation();
                  return false;
-             }
-         });
-
- /*       $('.btn_submit').on('click', function(){
-             var checkboxIsChecked = $('.agreement').is(":checked");
-             console.log(checkboxIsChecked);
-             var phone = $(".user-phone");
-                 var phoneVal = phone.val();
-                 var form = phone.parent('form');
-             if ((checkboxIsChecked === false) && ((phoneVal.indexOf("_") != -1) || phoneVal == '')) {
-                 alert("ВВедите Коректный Номер Телефона и прочитайте соглашение");
+             } else if (phoneVal == '') {
+                 alert("ВВедите Номер Телефона!");
                  form.find('.btn_submit').attr('disabled',true);
-             } else {
+                 e.preventDefault();
+                 e.stopPropagation();
+                 return false;
+             } else if ((checkboxIsChecked === false) && (phoneVal.indexOf("_") == -1) && phoneVal !== '') {
+                 alert("Прочитайте соглашение");
+                 form.find('.btn_submit').attr('disabled',true);
+                 e.preventDefault();
+                 e.stopPropagation();
+                 return false;
+             } else /*if ((checkboxIsChecked === true) && (phoneVal.indexOf("_") == -1) && phoneVal !== '') */{
                  form.find('.btn_submit').removeAttr('disabled');
                  $("#phone_form").submit();
+                 alert("Ваша заявка принята! Скоро Мы свяжемся с вами");
              }
-         });*/
-
-         /*jQuery('#checkbox-read-instruction').change(function() {
-             console.log(this.checked);
-
-             if(this.checked) {
-                 //MAKE SEND BUTTON AVAILABLE
-             } else {
-                 //MAKE SEND BUTTON DISABLED
-             }
-         });*/
-
+         });
      });
 
  })( jQuery );
