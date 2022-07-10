@@ -58,5 +58,9 @@
              }
          });
      });
+    $('.header__burger').click(function(event) {
+        $('.header__burger,.Header__menu').toggleClass('active');
+        $('body').toggleClass('lock');
+        });
 
  })( jQuery );
