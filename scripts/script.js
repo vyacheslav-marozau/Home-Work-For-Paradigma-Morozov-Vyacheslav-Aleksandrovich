@@ -61,6 +61,11 @@
     $('.header__burger').click(function(event) {
         $('.header__burger,.Header__menu').toggleClass('active');
         $('body').toggleClass('lock');
+        $('.main__content__body__mobile').toggleClass('active');
         });
-
+     $('.RoundCross').click(function(event) {
+         $('.RoundCross, .leftSidebarMobile').toggleClass('activate');
+         $('body').toggleClass('lock');
+         $('.leftSidebarMobilePopup').toggleClass('activate');
+     });
  })( jQuery );
