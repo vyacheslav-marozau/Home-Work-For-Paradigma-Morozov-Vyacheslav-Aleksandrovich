@@ -64,8 +64,12 @@
         $('.main__content__body__mobile').toggleClass('active');
         });
      $('.RoundCross').click(function(event) {
-         $('.RoundCross, .leftSidebarMobile, .leftSidebarMobilePopup, .header__burger').toggleClass('activate');
+         $('.RoundCross, .leftSidebarMobile, .leftSidebarMobilePopup').toggleClass('activate');
          $('body').toggleClass('lock');
-         /*$('.leftSidebarMobilePopup').toggleClass('activate');*/
      });
+     $('.callMe').click(function(event) {
+         $('.header__burger').toggleClass('activate');
+         $('body').toggleClass('lock');
+     });
+
  })( jQuery );
