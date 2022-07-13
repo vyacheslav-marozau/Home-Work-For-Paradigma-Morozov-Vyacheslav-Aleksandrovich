@@ -502,7 +502,7 @@ input#user_phone::-webkit-input-placeholder {
 .leftSidebar li {
     display: flex;
     list-style-type: none;
-    flex-basis: 8.1481vh;
+    flex-basis: 6.1481vh;
     flex-direction: column;
     width: 8.3854vw;
     font-style: normal;
@@ -837,7 +837,9 @@ input#user_phone::-webkit-input-placeholder {
     .header__burger.active span {
         transform: scale(0);
     }
-
+    .header__burger.activate {
+        pointer-events: none;
+    }
     .Header__menu {
         top: -100%;
         position: fixed;
@@ -1059,8 +1061,9 @@ input#user_phone::-webkit-input-placeholder {
         background: #ffffff;
         position: absolute;
         width: 50%;
+        left: 50%;
+        top: 50%;
         height: 8px;
-        left: 0;
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
     }
 
@@ -1070,11 +1073,13 @@ input#user_phone::-webkit-input-placeholder {
         position: absolute;
         height: 50%;
         width: 8px;
-        left: 0;
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+        transform: translateX(-50%) translateY(-30%);
     }
-
     .RoundCross:before {
+        transform: translateX(-50%) translateY(-50%);
+    }
+    /*.RoundCross:before {
         top: 29px;
         left: 17px;
     }
@@ -1082,7 +1087,7 @@ input#user_phone::-webkit-input-placeholder {
     .RoundCross:after {
         top: 22px;
         left: 29px;
-    }
+    }*/
 
     .leftSidebarMobile > .RoundCross {
         align-self: start;
@@ -1190,6 +1195,100 @@ input#user_phone::-webkit-input-placeholder {
         transform: scale(2.8);
     }
 }
+@media (max-width: 1889px) {
+    .leftSidebar li {
+        width: 8.4854vw;
+    }
+}
+@media (max-width: 1877px) {
+    .calculateTheCostButton {
+        flex-basis: 12.79375vw;
+    }
+}
+@media (max-width: 1867px) {
+    .leftSidebar li {
+        width: 8.5854vw;
+    }
+}
+
+@media (max-width: 1863px) {
+    .calculateTheCostButton {
+        flex-basis: 12.896vw;
+    }
+}
+@media (max-width: 1848px) {
+    .calculateTheCostButton {
+        flex-basis:  12.996vw;
+    }
+}
+@media (max-width: 1845px) {
+    .leftSidebar li {
+        width: 8.6854vw;
+    }
+    .mainHeader {
+        width: 32.5937vw;
+    }
+}
+@media (max-width: 1834px) {
+    .calculateTheCostButton {
+        flex-basis: 13.096vw;
+    }
+}
+@media (max-width: 1825px) {
+    .leftSidebar li {
+        width: 8.7854vw;
+    }
+}
+@media (max-width: 1820px) {
+    .calculateTheCostButton {
+        flex-basis: 13.196vw;
+    }
+}
+@media (max-width: 1806px) {
+    .calculateTheCostButton {
+        flex-basis: 13.296vw;
+    }
+}
+@media (max-width: 1804px) {
+    .leftSidebar li {
+        width: 8.8854vw;
+    }
+}
+@media (max-width: 1793px) {
+    .calculateTheCostButton {
+        flex-basis: 13.396vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 21.3612vw;
+    }
+}
+@media (max-width: 1789px) {
+    .mainHeader {
+    width: 33.5937vw;
+    }
+}
+@media (max-width: 1783px) {
+    .leftSidebar li {
+        width: 8.9854vw;
+    }
+}
+@media (max-width: 1779px) {
+    .calculateTheCostButton {
+        flex-basis: 13.496vw;
+    }
+}
+@media (max-width: 1766px) {
+    .calculateTheCostButton {
+        flex-basis: 13.596vw;
+    }
+}
+@media (max-width: 1764px) {
+    .leftSidebar li {
+        width: 9.0854vw;
+    }
+}
+
+
 @media (max-width: 600px) {
     .pdfDownloadLink {
         flex-basis: 50vw;
