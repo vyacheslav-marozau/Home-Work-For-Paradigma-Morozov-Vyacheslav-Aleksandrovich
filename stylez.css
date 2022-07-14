@@ -143,11 +143,12 @@ ul.menu-main li > * {
     display: flex;
 }
 .price-catalog {
-    /*width: 10.6771vw;
-    height: 4.0601vh;*/
+    width: 13vw;
+    /*height: 4.0601vh;*/
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 .pdfFile {
     display: flex;
@@ -164,7 +165,7 @@ ul.menu-main li > * {
 }
 .pdfDownloadLink {
     display: flex;
-    flex-basis: 8.28125vw;
+    flex-basis: 10.5vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1em;
@@ -742,10 +743,6 @@ input#user_phone::-webkit-input-placeholder {
         z-index: 2;
     }
 
-    .container {
-        max-width: 83.125vw;
-    }
-
     .wrapper {
         max-width: 100vw;
         min-height: 100vh;
@@ -1218,7 +1215,7 @@ input#user_phone::-webkit-input-placeholder {
 }
 @media (max-width: 1848px) {
     .calculateTheCostButton {
-        flex-basis:  12.996vw;
+        flex-basis: 12.996vw;
     }
 }
 @media (max-width: 1845px) {
@@ -1244,6 +1241,15 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 13.196vw;
     }
 }
+@media (max-width: 1809px) {
+    .price-catalog {
+        width: 14vw;
+    }
+    .pdfDownloadLink {
+        display: flex;
+        flex-basis: 10.55vw;
+    }
+}
 @media (max-width: 1806px) {
     .calculateTheCostButton {
         flex-basis: 13.296vw;
@@ -1252,6 +1258,15 @@ input#user_phone::-webkit-input-placeholder {
 @media (max-width: 1804px) {
     .leftSidebar li {
         width: 8.8854vw;
+    }
+}
+@media (max-width: 1800px) {
+    .price-catalog {
+        width: 15vw;
+    }
+    .pdfDownloadLink {
+        display: flex;
+        flex-basis: 11.55vw;
     }
 }
 @media (max-width: 1793px) {
@@ -1285,6 +1300,663 @@ input#user_phone::-webkit-input-placeholder {
 @media (max-width: 1764px) {
     .leftSidebar li {
         width: 9.0854vw;
+    }
+}
+@media (max-width: 1753px) {
+    .calculateTheCostButton {
+        flex-basis: 13.696vw;
+    }
+}
+@media (max-width: 1744px) {
+    .leftSidebar li {
+        width: 9.1854vw;
+    }
+}
+@media (max-width: 1741px) {
+    .calculateTheCostButton {
+        flex-basis: 13.796vw;
+    }
+}
+@media (max-width: 1736px) {
+    .mainHeader {
+        width: 34.5937vw;
+    }
+}
+@media (max-width: 1728px) {
+    .calculateTheCostButton {
+        flex-basis: 13.896vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 22.3612vw;
+    }
+}
+@media (max-width: 1727px) {
+    .checkInForLookingHousesButton {
+        flex-basis: 11.8029vw;
+    }
+}
+@media (max-width: 1725px) {
+    .leftSidebar li {
+        width: 9.3854vw;
+    }
+}
+@media (max-width: 1716px) {
+    .mainHeaderDescription {
+        width: 18.9229vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 14.096vw;
+    }
+    .mainHeaderRounds {
+        width: 23.1421vw;
+    }
+}
+@media (max-width: 1712px) {
+    .checkInForLookingHousesButton {
+        flex-basis: 12.0029vw;
+    }
+    .mainHeaderDescription {
+        width: 19.9229vw;
+    }
+}
+@media (max-width: 1696px) {
+    descriptionContainer {
+        flex-basis: 11.877vw;
+    }
+    .hat {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1691px) {
+    .calculateTheCostButton {
+        flex-basis: 14.296vw;
+    }
+    .leftSidebar li {
+        width: 9.5854vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 12.2029vw;
+    }
+    .mainHeader {
+        width: 35.5937vw;
+    }
+    .mainHeaderRounds {
+        width: 24.1421vw;
+    }
+}
+@media (max-width: 1667px) {
+    .calculateTheCostButton {
+        flex-basis: 14.57vw;
+    }
+    .leftSidebar li {
+        width: 9.9854vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 12.4029vw;
+    }
+    .mainHeader {
+        width: 36.5937vw;
+    }
+}
+@media (max-width: 1645px) {
+    .price-catalog {
+        width: 16vw;
+    }
+    .pdfDownloadLink {
+        display: flex;
+        flex-basis: 12.55vw;
+    }
+}
+@media (max-width: 1636px) {
+    .backGroundCalculateTheCost {
+        flex-basis: 23.3612vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 14.77vw;
+    }
+    .backGroundCheckInForLookingHouses {
+        flex-basis: 20.1479vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 12.8vw;
+    }
+    .descriptionContainer {
+        flex-basis: 12.677vw;
+    }
+    .mainHeaderDescription {
+        width: 20.9229vw;
+    }
+}
+@media (max-width: 1613px) {
+    .calculateTheCostButton {
+        flex-basis: 14.97vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 13vw;
+    }
+    .mainHeader {
+        width: 37.5937vw;
+    }
+
+    .leftSidebar li {
+        width: 10.1854vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 12.387vw;
+    }
+}
+@media (max-width: 1593px) {
+    .calculateTheCostButton {
+        flex-basis: 15.17vw;
+    }
+    .mainHeaderDescription {
+        width: 22.9229vw;
+    }
+    .descriptionContainer {
+        flex-basis: 11.277vw;
+    }
+    .mainHeaderRounds {
+        width: 25.1421vw;
+    }
+}
+@media (max-width: 1593px) {
+    .calculateTheCostButton {
+        flex-basis: 15.17vw;
+    }
+    .mainHeaderDescription {
+        width: 21.9229vw;
+    }
+    .descriptionContainer {
+        flex-basis: 11.477vw;
+    }
+}
+@media (max-width: 1593px) {
+    .calculateTheCostButton {
+        flex-basis: 15.47vw;
+    }
+    .leftSidebar li {
+        width: 10.3854vw;
+    }
+    .mainHeader {
+        width: 38.5937vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 13.2vw;
+    }
+    .descriptionContainer {
+        flex-basis: 11.677vw;
+    }
+}
+@media (max-width: 1570px) {
+    .answerSomeQuestions {
+        flex-basis: 12.6vw;
+    }
+    .answerOnlineBlock {
+        width: 11vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 15.67vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 13.4vw;
+    }
+    .leftSidebar li {
+        width: 10.5854vw;
+    }
+}
+@media (max-width: 1551px) {
+    .descriptionContainer {
+        flex-basis: 13.677vw;
+    }
+}
+
+@media (max-width: 1544px) {
+    .answerSomeQuestions {
+        flex-basis: 12.8vw;
+    }
+    .answerOnlineBlock {
+        width: 12vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 15.87vw;
+    }
+    .descriptionContainer {
+        flex-basis: 11.877vw;
+    }
+}
+@media (max-width: 1520px) {
+    .answerSomeQuestions {
+        flex-basis: 13.1vw;
+    }
+    .mainHeader {
+        width: 39.5937vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 13.6vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 16.07vw;
+    }
+    .descriptionContainer {
+        flex-basis: 12.077vw;
+    }
+}
+@media (max-width: 1513px) {
+    .price-catalog {
+        width: 17vw;
+    }
+    .pdfDownloadLink {
+        flex-basis: 14.677vw;
+    }
+    .container {
+        max-width: 83.3645vw;
+    }
+}
+@media (max-width: 1499px) {
+    .descriptionContainer {
+        flex-basis: 13.077vw;
+    }
+    .leftSidebar li {
+        width: 10.7854vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 13.8vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 16.27vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 13.3vw;
+    }
+}
+@media (max-width: 1473px) {
+    .mainHeader {
+        font-size: 4em;
+    }
+    .leftSidebar li {
+        width: 11.9854vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 14vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 16.47vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 13.5vw;
+    }
+    .mainHeaderDescription {
+        width: 22.9229vw;
+    }
+    .answerSomeQuestionsContainer {
+        width: 19vw;
+    }
+}
+@media (max-width: 1447px) {
+    .calculateTheCostButton {
+    flex-basis: 16.67vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 14.2vw;
+    }
+    .container {
+        max-width: 86.3645vw;
+    }
+    .price-catalog {
+        width: 18vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 13.7vw;
+    }
+}
+@media (max-width: 1439px) {
+    .mainHeaderRounds {
+        width: 26.1421vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 16.87vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 14.4vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 13.9vw;
+    }
+    .answerOnlineBlock {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1413px) {
+    .calculateTheCostButton {
+        flex-basis: 17.07vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 14.4vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 13.9vw;
+    }
+    .mainHeader {
+        font-size: 3.9em;
+    }
+    .mainHeaderDescription {
+        width: 23.9229vw;
+    }
+    .mainHeaderRounds {
+        width: 27.1421vw;
+    }
+}
+@media (max-width: 1404px) {
+    .descriptionContainer {
+        flex-basis: 14.077vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 17.27vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 14.6vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 14.1vw;
+    }
+    .mainHeader {
+        font-size: 3.8em;
+    }
+    .mainHeaderRounds {
+        width: 28.1421vw;
+    }
+}
+@media (max-width: 1384px) {
+    .calculateTheCostButton {
+        flex-basis: 17.87vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 15.2vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 14.6vw;
+    }
+    .mainHeader {
+        font-size: 3.7em;
+    }
+    .mainHeaderDescription {
+         width: 24.9229vw;
+    }
+    .answerSomeQuestionsContainer {
+        width: 21vw;
+    }
+}
+@media (max-width: 1333px) {
+    .calculateTheCostButton {
+        flex-basis: 18.27vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 15.6vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 15vw;
+    }
+    .container {
+        max-width: none;
+        align-items: center;
+    }
+    .mainContentWrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+    }
+    .mainHeaderRounds {
+        width: 28.1421vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 24.3612vw;
+    }
+    .backGroundCheckInForLookingHouses {
+        flex-basis: 21.1479vw;
+    }
+}
+@media (max-width: 1333px) {
+    .calculateTheCostButton {
+        flex-basis: 18.27vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 15.6vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 15vw;
+    }
+    .container {
+        max-width: none;
+        align-items: center;
+    }
+    .mainContentWrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+    }
+    .mainHeaderRounds {
+        width: 28.1421vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 24.3612vw;
+    }
+    .backGroundCheckInForLookingHouses {
+        flex-basis: 21.1479vw;
+    }
+    .main-content {
+        justify-content: space-evenly;
+    }
+}
+@media (max-width: 1322px) {
+    .mainContentWrapper {
+        width: 84vw;
+    }
+    .hat {
+        width: 87vw;
+    }
+    .menu-main {
+        width: 87vw;
+    }
+    .leftSidebar li {
+        width: 12.9854vw;
+    }
+}
+@media (max-width: 1305px) {
+    .answerSomeQuestionsContainer {
+        width: 24vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 16vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 25.3612vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 21.27vw;
+    }
+    .backGroundCheckInForLookingHouses {
+        flex-basis: 23.1479vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 18.6vw;
+    }
+    .mainHeader {
+        width: 40.5937vw;
+    }
+    .mainHeaderDescription {
+        width: 25.9229vw;
+    }
+    .mainHeaderRounds {
+        width: 30.1421vw;
+    }
+    .answerOnlineBlock {
+        width: 13vw;
+    }
+    .iconDisk {
+        flex-basis: 3.8838vw;
+        height: 3.8838vw;
+    }
+    .messengers>li.viber img, .messengers>li.whatsup img  {
+        height: 2.0046vw;
+    }
+    .messengers>li.telegram img  {
+        height: 1.4135vw;
+    }
+}
+@media (max-width: 1286px) {
+    .descriptionContainer {
+        flex-basis: 15.077vw;
+    }
+    .mainHeader {
+        width: 42.5937vw;
+    }
+    .mainContentWrapper {
+        width: 87vw;
+    }
+    .mainHeaderDescription {
+        width: 26.9229vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 17vw;
+    }
+    .leftSidebar li {
+        width: 13.9854vw;
+    }
+}
+@media (max-width: 1211px) {
+    .mainContentWrapper {
+        width: 89vw;
+    }
+    .mainHeader {
+        width: 43.5937vw;
+    }
+    .mainHeaderRounds {
+        width: 32.1421vw;
+    }
+    .hat {
+        width: 90vw;
+    }
+    .descriptionContainer {
+        flex-basis: 16.077vw;
+    }
+    .price-catalog {
+        width: 20vw;
+    }
+    .pdfDownloadLink {
+        flex-basis: 16.677vw;
+    }
+    .messengers {
+        width: 14vw;
+        justify-content: space-between;
+    }
+    .menu-main {
+        width: 90vw;
+    }
+    .mainHeaderDescription {
+        width: 27.9229vw;
+    }
+    .answerOnlineBlock {
+        width: 14vw;
+    }
+    .calculateTheCostButton {
+        align-items: center;
+    }
+    .checkInForLookingHousesButton {
+        align-items: center;
+    }
+}
+@media (max-width: 1183px) {
+    .mainContentWrapper {
+        width: 91vw;
+    }
+    .mainHeader {
+        width: 44.5937vw;
+    }
+    .container {
+        align-items: start;
+    }
+    .menu-main {
+        width: 99vw;
+    }
+    .hat {
+        width: 99vw;
+    }
+    .mainContentWrapper {
+        width: 99vw;
+    }
+}
+@media (max-width: 1157px) {
+    .mainHeader {
+        width: 45.5937vw;
+    }
+    .mainHeaderDescription {
+        width: 28.9229vw;
+    }
+    .answerSomeQuestions {
+        flex-basis: 18vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 27.3612vw;
+    }
+    .backGroundCheckInForLookingHouses {
+        flex-basis: 25.1479vw;
+    }
+    .price-catalog {
+        width: 22vw;
+    }
+}
+@media (max-width: 1139px) {
+    .pdfDownloadLink {
+        flex-basis: 17.2vw;
+    }
+    .leftSidebar li {
+        width: 14.9854vw;
+    }
+    .mainHeader {
+        width: 46.5937vw;
+    }
+    .descriptionContainer {
+        flex-basis: 17.077vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 22.27vw;
+    }
+    .mainHeaderDescription {
+        width: 29.9229vw;
+    }
+    .mainHeaderRounds {
+        width: 34.1421vw;
+    }
+}
+@media (max-width: 1107px) {
+    .mainHeader {
+        width: 47.5937vw;
+    }
+    .main-content {
+        justify-content: space-between;
+    }
+    .price-catalog {
+        width: 23vw;
+    }
+    .pdfDownloadLink {
+        flex-basis: 18.2vw;
+    }
+    .answerOnlineBlock {
+        width: 15vw;
+    }
+}
+@media (max-width: 1086px) {
+    .checkInForLookingHousesButton {
+        flex-basis: 20.6vw;
+    }
+    .main-content {
+        height: 55vh;
+    }
+    .mainHeader {
+        width: 48.5937vw;
+    }
+    .mainHeaderDescription {
+        width: 30.9229vw;
     }
 }
 
