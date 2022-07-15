@@ -312,8 +312,8 @@ ul.menu-main li > * {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex-basis: 28.6458vw;
-    height: 60.1851vh;
+    flex-basis:  31.6458vw;
+    height: 69.1851vh;
 
     padding: 1.8518vh 1.0416vw 10px 0.9259vh;
     background-color: #c5c5c5;
@@ -324,7 +324,7 @@ ul.menu-main li > * {
 .scopes {
     display: flex;
     flex-direction: column;
-    flex-basis: 60.1851vh;
+    flex-basis: 66.1851vh;
     justify-content: space-between;
     align-items: center;
     width: 18.5416vw;
@@ -353,7 +353,8 @@ ul.menu-main li > * {
     /*height: 6.8518vh;*/
     font-style: normal;
     font-weight: 500;
-    font-size: 2.5em;
+    font-size: 3.4em;
+    width: 27.4vw;
     line-height: 1;
     text-align: center;
     letter-spacing: 0.02em;
@@ -364,7 +365,8 @@ ul.menu-main li > * {
     flex-basis: 1.5vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1.3333em;
+    font-size: 2em;
+    width: 24vw;
     line-height: 1.5;
     text-align: center;
     color: #000000;
@@ -374,7 +376,8 @@ ul.menu-main li > * {
     flex-basis: 1.3vw;
     font-style: normal;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 2em;
+    width: 21.6vw;
     line-height: 1.2191;
     text-align: center;
     color: #000000;
@@ -384,7 +387,8 @@ ul.menu-main li > * {
 
     flex-basis: 1.2vw;
     color: #000000;
-    font-size: 1em;
+    font-size: 2.3em;
+    width: 19.2vw;
     line-height: 1.2191;
     text-align: left;
 }
@@ -393,7 +397,7 @@ ul.menu-main li > * {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    flex-basis: 11vw;
+    flex-basis: 14vw;
     text-align: center;
 }
 #user_phone {
@@ -402,13 +406,17 @@ ul.menu-main li > * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    padding: 8px 8px 8px 36px;
+    padding: 8px 8px 8px 8px;
     border: 1px solid #ccc;
-    font-size: 1.5em;
+    font-size: 3em;
+    width: 17vw;
     line-height: 1.1111;
     color: #363636;
     position: relative;
 }
+
+
+
 #user_phone:focus {
     outline: none;
     border-color: #363636;
@@ -421,8 +429,8 @@ input#user_phone::-webkit-input-placeholder {
 }
 .btn_submit {
     display: flex;
-    flex-basis: 7.0312vw;
-    margin-right: -7.0312vw;
+    flex-basis: 12.0312vw;
+    margin-right: -12.0312vw;
     /*height: 4.1666vh;*/
     opacity: 0%;
     border: none;
@@ -448,16 +456,17 @@ input#user_phone::-webkit-input-placeholder {
 }
 .callMePopUp {
     display: flex;
-    flex-basis: 7.0312vw;
-    height: 1.8518vh;
     text-align: center;
     font-style: normal;
     font-weight: 600;
-    font-size: 1.3333em;
+    flex-basis: 13.0312vw;
+    font-size: 2.2em;
+    height: 3.1vh;
     line-height: 1.25em;
     color: #FFFFFF;
     letter-spacing: 0.02em;
 }
+
 .arrowRight {
     display: flex;
     flex-basis: 1.8468vw;
@@ -467,27 +476,28 @@ input#user_phone::-webkit-input-placeholder {
     display: flex;
     justify-content: space-evenly;
     flex-basis: 5vh;
-    width: 21vw;
+    width: 33.8vw;
     align-items: center;
 }
  .agreement {
      display: flex;
+     transform: scale(2);
  }
 .licenseAgreementBlock {
     color: #1C1C1C;
     display: flex;
     flex-basis: 16.6145vw;
-    height: 5vh;
+    height: 7vh;
     font-style: normal;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.8em;
     line-height: 1.75em;
     flex-direction: column;
     align-items: flex-start
   }
 .licenseAgreementDownloadLink {
     display: flex;
-    width: 19vw;
+    width: 28vw;
     text-decoration: none;
     color: #F38120;
 }
@@ -1192,9 +1202,43 @@ input#user_phone::-webkit-input-placeholder {
         transform: scale(2.8);
     }
 }
+@media (max-width: 1917px) {
+    .popUpHeaderTypeTelefon {
+        width: 19.4vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 21.8vw;
+    }
+}
 @media (max-width: 1889px) {
     .leftSidebar li {
         width: 8.4854vw;
+    }
+}
+@media (max-width: 1913px) {
+    .popUpHeader {
+        font-size: 3.3em;
+    }
+}
+@media (max-width: 1897px) {
+    .popUpHeaderGrafikRaboti {
+        width: 22vw;
+    }
+}
+@media (max-width: 1890px) {
+    .popUpHeaderTypeTelefon {
+        width: 19.6vw;
+    }
+}
+@media (max-width: 1880px) {
+    .popUpHeaderGrafikRaboti {
+        width: 22.2vw;
+    }
+    .popUpHeaderTypeTelefon {
+        width: 19.8vw;
+    }
+    .popUpHeaderDescription {
+        width: 24.2vw;
     }
 }
 @media (max-width: 1877px) {
@@ -1207,10 +1251,21 @@ input#user_phone::-webkit-input-placeholder {
         width: 8.5854vw;
     }
 }
-
 @media (max-width: 1863px) {
     .calculateTheCostButton {
         flex-basis: 12.896vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 22.6vw;
+    }
+    .popUpHeaderDescription {
+        width: 24.6vw;
+    }
+    .popUpHeaderTypeTelefon {
+        width: 20.2vw;
+    }
+    .popUpHeader {
+        font-size: 3.2em;
     }
 }
 @media (max-width: 1848px) {
@@ -1229,6 +1284,20 @@ input#user_phone::-webkit-input-placeholder {
 @media (max-width: 1834px) {
     .calculateTheCostButton {
         flex-basis: 13.096vw;
+    }
+}
+@media (max-width: 1830px) {
+    .popUpHeaderGrafikRaboti {
+        width: 23.2vw;
+    }
+    .popUpHeaderDescription {
+        width: 25.2vw;
+    }
+    .popUpHeaderTypeTelefon {
+        width: 20.6vw;
+    }
+    #user_phone {
+        width: 19vw;
     }
 }
 @media (max-width: 1825px) {
@@ -1268,6 +1337,9 @@ input#user_phone::-webkit-input-placeholder {
         display: flex;
         flex-basis: 11.55vw;
     }
+    .popUpHeader {
+        font-size: 3.1em;
+    }
 }
 @media (max-width: 1793px) {
     .calculateTheCostButton {
@@ -1286,10 +1358,25 @@ input#user_phone::-webkit-input-placeholder {
     .leftSidebar li {
         width: 8.9854vw;
     }
+    .popUpHeaderGrafikRaboti {
+        width: 23.8vw;
+    }
+    .popUpHeaderDescription {
+        width: 25.8vw;
+    }
+    .popUpHeaderTypeTelefon {
+        font-size: 2em;
+        width: 18.6vw;
+    }
 }
 @media (max-width: 1779px) {
     .calculateTheCostButton {
         flex-basis: 13.496vw;
+    }
+}
+@media (max-width: 1769px) {
+    .licenseAgreementDownloadLink {
+        width: 29vw;
     }
 }
 @media (max-width: 1766px) {
@@ -1311,6 +1398,16 @@ input#user_phone::-webkit-input-placeholder {
     .leftSidebar li {
         width: 9.1854vw;
     }
+    .popUpHeader {
+        font-size: 3em;
+    }
+    .popUpHeaderDescription {
+        font-size: 1.7em;
+    }
+    .popUpHeaderGrafikRaboti {
+        font-size: 1.7em;
+        width: 20.8vw;
+    }
 }
 @media (max-width: 1741px) {
     .calculateTheCostButton {
@@ -1329,6 +1426,9 @@ input#user_phone::-webkit-input-placeholder {
     .backGroundCalculateTheCost {
         flex-basis: 22.3612vw;
     }
+    .callMePopUp {
+        flex-basis: 14.0312vw;
+    }
 }
 @media (max-width: 1727px) {
     .checkInForLookingHousesButton {
@@ -1338,6 +1438,13 @@ input#user_phone::-webkit-input-placeholder {
 @media (max-width: 1725px) {
     .leftSidebar li {
         width: 9.3854vw;
+    }
+    .licenseAgreementBlock {
+        font-size: 1.3em;
+        height: 5vh;
+    }
+    .licenseAgreementDownloadLink {
+        width: 23vw;
     }
 }
 @media (max-width: 1716px) {
@@ -1350,6 +1457,9 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeaderRounds {
         width: 23.1421vw;
     }
+    .popUpHeaderTypeTelefon {
+        width: 20.2vw;
+    }
 }
 @media (max-width: 1712px) {
     .checkInForLookingHousesButton {
@@ -1357,6 +1467,9 @@ input#user_phone::-webkit-input-placeholder {
     }
     .mainHeaderDescription {
         width: 19.9229vw;
+    }
+    #user_phone {
+        width: 20vw;
     }
 }
 @media (max-width: 1696px) {
@@ -1383,6 +1496,14 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeaderRounds {
         width: 24.1421vw;
     }
+    .popUpHeaderGrafikRaboti {
+        width: 21.4vw;
+    }
+}
+@media (max-width: 1687px) {
+    .popUpHeader {
+        font-size: 2.9em;
+    }
 }
 @media (max-width: 1667px) {
     .calculateTheCostButton {
@@ -1406,6 +1527,21 @@ input#user_phone::-webkit-input-placeholder {
         display: flex;
         flex-basis: 12.55vw;
     }
+    .background_btn_submit {
+        justify-content: space-evenly;
+    }
+    .b-popup-content {
+        height: 66.1851vh;
+    }
+}
+@media (max-width: 1643px) {
+    .popUpHeaderGrafikRaboti {
+        width: 22vw;
+    }
+    .btn_submit {
+        flex-basis: 13.0312vw;
+        margin-right: -13.0312vw;
+    }
 }
 @media (max-width: 1636px) {
     .backGroundCalculateTheCost {
@@ -1427,6 +1563,29 @@ input#user_phone::-webkit-input-placeholder {
         width: 20.9229vw;
     }
 }
+@media (max-width: 1631px) {
+    .popUpHeader {
+        font-size: 2.8em;
+    }
+}
+@media (max-width: 1629px) {
+    .phone_form {
+        flex-basis: 15vw;
+    }
+    .scopes {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 59.1851vh;
+    }
+    .b-popup-content {
+        height: 62.1851vh;
+    }
+}
+@media (max-width: 1620px) {
+    #user_phone {
+        width: 21vw;
+    }
+}
 @media (max-width: 1613px) {
     .calculateTheCostButton {
         flex-basis: 14.97vw;
@@ -1437,42 +1596,41 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeader {
         width: 37.5937vw;
     }
-
     .leftSidebar li {
         width: 10.1854vw;
     }
     .answerSomeQuestions {
         flex-basis: 12.387vw;
     }
-}
-@media (max-width: 1593px) {
-    .calculateTheCostButton {
-        flex-basis: 15.17vw;
-    }
-    .mainHeaderDescription {
-        width: 22.9229vw;
-    }
-    .descriptionContainer {
-        flex-basis: 11.277vw;
-    }
-    .mainHeaderRounds {
-        width: 25.1421vw;
+    .background_btn_submit {
+        width: 19.5416vw;
     }
 }
-@media (max-width: 1593px) {
-    .calculateTheCostButton {
-        flex-basis: 15.17vw;
+@media (max-width: 1598px) {
+    .popUpHeaderGrafikRaboti {
+        width: 22.6vw;
     }
-    .mainHeaderDescription {
-        width: 21.9229vw;
-    }
-    .descriptionContainer {
-        flex-basis: 11.477vw;
+}
+@media (max-width: 1596px) {
+    .licenseAgreementDownloadLink {
+        width: 24vw;
     }
 }
 @media (max-width: 1593px) {
     .calculateTheCostButton {
         flex-basis: 15.47vw;
+    }
+    .checkInForLookingHousesButton {
+        flex-basis: 13.2vw;
+    }
+    .mainHeaderDescription {
+        width: 22.9229vw;
+    }
+    .descriptionContainer {
+        flex-basis: 11.677vw;
+    }
+    .mainHeaderRounds {
+        width: 25.1421vw;
     }
     .leftSidebar li {
         width: 10.3854vw;
@@ -1480,11 +1638,24 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeader {
         width: 38.5937vw;
     }
-    .checkInForLookingHousesButton {
-        flex-basis: 13.2vw;
+}
+@media (max-width: 1589px) {
+    .callMePopUp {
+        flex-basis: 15.0312vw;
     }
-    .descriptionContainer {
-        flex-basis: 11.677vw;
+    .btn_submit {
+        flex-basis: 15.0312vw;
+        margin-right: -15.0312vw;
+    }
+}
+@media (max-width: 1578px) {
+    .popUpHeaderTypeTelefon {
+        width: 20.8vw;
+    }
+}
+@media (max-width: 1575px) {
+    .popUpHeader {
+        font-size: 2.7em;
     }
 }
 @media (max-width: 1570px) {
@@ -1502,6 +1673,11 @@ input#user_phone::-webkit-input-placeholder {
     }
     .leftSidebar li {
         width: 10.5854vw;
+    }
+}
+@media (max-width: 1556px) {
+    .popUpHeaderGrafikRaboti {
+        width: 23.2vw;
     }
 }
 @media (max-width: 1551px) {
@@ -1524,6 +1700,21 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 11.877vw;
     }
 }
+@media (max-width: 1541px) {
+    #user_phone {
+        width: 22vw;
+    }
+}
+@media (max-width: 1533px) {
+    .popUpHeaderTypeTelefon {
+        width: 21.4vw;
+    }
+}
+@media (max-width: 1529px) {
+    .licenseAgreementDownloadLink {
+        width: 25vw;
+    }
+}
 @media (max-width: 1520px) {
     .answerSomeQuestions {
         flex-basis: 13.1vw;
@@ -1539,6 +1730,33 @@ input#user_phone::-webkit-input-placeholder {
     }
     .descriptionContainer {
         flex-basis: 12.077vw;
+    }
+    .phone_form {
+        flex-basis: 16vw;
+    }
+}
+@media (max-width: 1518px) {
+    .popUpHeader {
+        font-size: 2.6em;
+    }
+    .popUpHeaderDescription {
+        font-size: 1.4em;
+    }
+    .popUpHeaderGrafikRaboti {
+        font-size: 1.4em;
+        width: 20.2vw;
+    }
+    .popUpHeaderTypeTelefon {
+        font-size: 1.7em;
+        width: 18.4vw;
+    }
+    .scopes {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 55.1851vh;
+    }
+    .b-popup-content {
+        height: 58.1851vh;
     }
 }
 @media (max-width: 1513px) {
@@ -1569,6 +1787,26 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 13.3vw;
     }
 }
+@media (max-width: 1483px) {
+    .callMePopUp {
+        font-size: 2em;
+    }
+    .btn_submit {
+        flex-basis: 13.0312vw;
+        margin-right: -14.0312vw;
+    }
+    .background_btn_submit {
+        width: 20.5416vw;
+    }
+}
+@media (max-width: 1478px) {
+    #user_phone {
+        width: 23vw;
+    }
+    .popUpHeaderTypeTelefon {
+        width: 19vw;
+    }
+}
 @media (max-width: 1473px) {
     .mainHeader {
         font-size: 4em;
@@ -1590,6 +1828,19 @@ input#user_phone::-webkit-input-placeholder {
     }
     .answerSomeQuestionsContainer {
         width: 19vw;
+    }
+}
+@media (max-width: 1468px) {
+    .licenseAgreementDownloadLink {
+        width: 26vw;
+    }
+}
+@media (max-width: 1462px) {
+    #user_phone {
+        font-size: 2.8em;
+    }
+    .popUpHeader {
+        font-size: 2.5em;
     }
 }
 @media (max-width: 1447px) {
@@ -1626,6 +1877,16 @@ input#user_phone::-webkit-input-placeholder {
         justify-content: space-between;
     }
 }
+@media (max-width: 1433px) {
+    .popUpHeaderGrafikRaboti {
+        width: 20.8vw;
+    }
+}
+@media (max-width: 1426px) {
+    .popUpHeaderTypeTelefon {
+        width: 20vw;
+    }
+}
 @media (max-width: 1413px) {
     .calculateTheCostButton {
         flex-basis: 17.07vw;
@@ -1645,6 +1906,16 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeaderRounds {
         width: 27.1421vw;
     }
+    .licenseAgreementBlock {
+        font-size: 1em;
+    }
+    .licenseAgreementDownloadLink {
+        width: 27vw;
+    }
+}
+@media (max-width: 1406px) {
+    .popUpHeader {
+        width: 27.8vw;
 }
 @media (max-width: 1404px) {
     .descriptionContainer {
@@ -1666,6 +1937,16 @@ input#user_phone::-webkit-input-placeholder {
         width: 28.1421vw;
     }
 }
+@media (max-width: 1392px) {
+    .popUpHeaderGrafikRaboti {
+        width: 21.8vw;
+    }
+}
+@media (max-width: 1386px) {
+    .popUpHeader {
+        width: 28.4vw;
+    }
+}
 @media (max-width: 1384px) {
     .calculateTheCostButton {
         flex-basis: 17.87vw;
@@ -1684,6 +1965,29 @@ input#user_phone::-webkit-input-placeholder {
     }
     .answerSomeQuestionsContainer {
         width: 21vw;
+    }
+}
+@media (max-width: 1359px) {
+    DownloadLink {
+        width: 28vw;
+    }
+    .popUpHeader {
+        width: 29vw;
+    }
+    .popUpHeaderTypeTelefon {
+        width: 21vw;
+    }
+    .licenseAgreementDownloadLink {
+        width: 28vw;
+    }
+}
+@media (max-width: 1349px) {
+    .callMePopUp {
+        font-size: 1.9em;
+    }
+    .btn_submit {
+        flex-basis: 14.0312vw;
+        margin-right: -15.0312vw;
     }
 }
 @media (max-width: 1333px) {
@@ -1715,7 +2019,7 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 21.1479vw;
     }
 }
-@media (max-width: 1333px) {
+@media (max-width: 1329px) {
     .calculateTheCostButton {
         flex-basis: 18.27vw;
     }
@@ -1746,6 +2050,12 @@ input#user_phone::-webkit-input-placeholder {
     .main-content {
         justify-content: space-evenly;
     }
+    .popUpHeader {
+        width: 29.5vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 22.8vw;
+    }
 }
 @media (max-width: 1322px) {
     .mainContentWrapper {
@@ -1759,6 +2069,29 @@ input#user_phone::-webkit-input-placeholder {
     }
     .leftSidebar li {
         width: 12.9854vw;
+    }
+    #user_phone {
+        font-size: 2.7em;
+    }
+}
+@media (max-width: 1311px) {
+    .licenseAgreementBlock {
+        font-size: 0.8em;
+    }
+    .licenseAgreementDownloadLink {
+        width: 29vw;
+    }
+    .agreement {
+        transform: scale(1.5);
+    }
+    .licenseAgreementBlock {
+        font-size: 1.3em;
+        height: 3.1vh;
+    }
+}
+@media (max-width: 1305px) {
+    .popUpHeader {
+        width: 30.3vw;
     }
 }
 @media (max-width: 1305px) {
@@ -1803,6 +2136,11 @@ input#user_phone::-webkit-input-placeholder {
         height: 1.4135vw;
     }
 }
+@media (max-width: 1291px) {
+    .popUpHeaderTypeTelefon {
+        width: 22vw;
+    }
+}
 @media (max-width: 1286px) {
     .descriptionContainer {
         flex-basis: 15.077vw;
@@ -1821,6 +2159,64 @@ input#user_phone::-webkit-input-placeholder {
     }
     .leftSidebar li {
         width: 13.9854vw;
+    }
+}
+@media (max-width: 1272px) {
+    .popUpHeader {
+        font-size: 2.4em;
+    }
+    #user_phone {
+        font-size: 2.5em;
+    }
+    .callMePopUp {
+        font-size: 1.8em;
+    }
+    .phone_form {
+        flex-basis: 18vw;
+    }
+    .licenseAgreementBlock {
+        font-size: 0.6em;
+        height: 2.8vh;
+    }
+    .scopes {
+        flex-basis: 51.1851vh;
+    }
+    .b-popup-content {
+        height: 54.1851vh;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 23.6vw;
+    }
+}
+@media (max-width: 1265px) {
+    .licenseAgreementDownloadLink {
+        width: 21vw;
+    }
+    .agreementFlex {
+        width: 18.8vw;
+    }
+}
+@media (max-width: 1232px) {
+    .popUpHeaderTypeTelefon {
+        width: 23vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 24.4vw;
+    }
+}
+@media (max-width: 1221px) {
+    .popUpHeader {
+        font-size: 2.3em;
+    }
+}
+@media (max-width: 1217px) {
+    .popUpHeaderDescription {
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 1213px) {
+    .callMePopUp {
+        font-size: 1.7em;
     }
 }
 @media (max-width: 1211px) {
@@ -1865,6 +2261,16 @@ input#user_phone::-webkit-input-placeholder {
         align-items: center;
     }
 }
+@media (max-width: 1191px) {
+    #user_phone {
+        font-size: 2.3em;
+    }
+}
+@media (max-width: 1186px) {
+    .popUpHeaderGrafikRaboti {
+        width: 25vw;
+    }
+}
 @media (max-width: 1183px) {
     .mainContentWrapper {
         width: 91vw;
@@ -1883,6 +2289,22 @@ input#user_phone::-webkit-input-placeholder {
     }
     .mainContentWrapper {
         width: 99vw;
+    }
+}
+@media (max-width: 1178px) {
+    .popUpHeaderTypeTelefon {
+        width: 24vw;
+    }
+    .popUpHeader {
+        font-size: 2.2em;
+    }
+}
+@media (max-width: 1159px) {
+    .popUpHeaderDescription {
+        width: 26.4vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 25.6vw;
     }
 }
 @media (max-width: 1157px) {
@@ -1928,6 +2350,25 @@ input#user_phone::-webkit-input-placeholder {
         width: 34.1421vw;
     }
 }
+@media (max-width: 1133px) {
+    .popUpHeaderDescription {
+        width: 27vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 26.2vw;
+    }
+    .popUpHeaderTypeTelefon {
+        width: 25vw;
+    }
+    .callMePopUp {
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 1119px) {
+    .popUpHeader {
+        font-size: 2.1em;
+    }
+}
 @media (max-width: 1107px) {
     .mainHeader {
         width: 47.5937vw;
@@ -1944,6 +2385,20 @@ input#user_phone::-webkit-input-placeholder {
     .answerOnlineBlock {
         width: 15vw;
     }
+    .popUpHeaderDescription {
+        width: 27.6vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 26.8vw;
+    }
+}
+@media (max-width: 1102px) {
+    .phone_form {
+        justify-content: space-evenly;
+    }
+    #user_phone {
+        font-size: 2.2em;
+    }
 }
 @media (max-width: 1086px) {
     .checkInForLookingHousesButton {
@@ -1958,9 +2413,110 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeaderDescription {
         width: 30.9229vw;
     }
+    .menu-main li {
+        font-size: 0.7em;
+    }
+    .main-content {
+        height: 55vh;
+    }
+    .leftSidebar {
+        justify-content: space-between;
+        height: 67.0092vh;
+    }
 }
-
-
+@media (max-width: 1084px) {
+    .popUpHeaderTypeTelefon {
+        width: 26vw;
+    }
+    .popUpHeaderDescription {
+        width: 28.2vw;
+    }
+    .popUpHeaderGrafikRaboti {
+        width: 27.6vw;
+    }
+    .callMePopUp {
+        font-size: 1.5em;
+    }
+    .answerSomeQuestions {
+        flex-basis: 19vw;
+    }
+}
+@media (max-width: 1070px) {
+    .calculateTheCostButton {
+        flex-basis: 22.87vw;
+    }
+}
+@media (max-width: 1068px) {
+    .popUpHeader {
+        font-size: 2em;
+    }
+}
+@media (max-width: 1061px) {
+    .popUpHeaderDescription {
+        width: 28.8vw;
+    }
+    #user_phone {
+        font-size: 2.1em;
+    }
+    .mainHeader {
+        width: 49.5937vw;
+    }
+    .descriptionContainer {
+        flex-basis: 17.577vw;
+    }
+    .leftSidebar li {
+        width: 15.9854vw;
+    }
+    .container {
+        max-width: 1019px;
+    }
+}
+@media (max-width: 1049px) {
+    .popUpHeaderGrafikRaboti {
+        width: 28.2vw;
+    }
+    .pdfDownloadLink {
+        flex-basis: 18.8vw;
+    }
+    ption {
+        width: 31.9229vw;
+    }
+    .mainHeaderRounds {
+        width: 35.1421vw;
+    }
+}
+@media (max-width: 1042px) {
+    .popUpHeaderTypeTelefon {
+        width: 28vw;
+    }
+    .calculateTheCostButton {
+        flex-basis: 23.47vw;
+    }
+    .mainHeader {
+        width: 50.5937vw;
+    }
+}
+@media (max-width: 1038px) {
+    .popUpHeaderDescription {
+        width: 29.6vw;
+    }
+}
+@media (max-width: 1032px) {
+    .mainContentWrapper {
+        width: 101vw;
+    }
+    .descriptionContainer {
+        flex-basis: 18.3vw;
+    }
+    .mainHeaderRounds {
+        width: 36.1421vw;
+    }
+}
+@media (max-width: 1027px) {
+    .popUpHeaderGrafikRaboti {
+        width: 28.8vw;
+    }
+}
 @media (max-width: 600px) {
     .pdfDownloadLink {
         flex-basis: 50vw;
@@ -2008,6 +2564,4 @@ input#user_phone::-webkit-input-placeholder {
     }
 
 }
-    @media (max-width: 320px) {
-
-}
+    @media (max-width: 320px) {}}
