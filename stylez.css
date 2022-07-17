@@ -2176,8 +2176,9 @@ input#user_phone::-webkit-input-placeholder {
         text-align: center;
     }
     .pdfDownloadLink {
+        border-bottom: 4.8px dotted #12C868;
         flex-basis: 52vw;
-        font-size: 0.683971em;
+        font-size: 0.953971em;
         font-weight: 600;
     }
     .pdfFile {
@@ -2448,7 +2449,6 @@ input#user_phone::-webkit-input-placeholder {
 }
 
 @media (max-width: 600px) {
-    }
     .pdfDownloadLink {
         flex-basis: 50vw;/*
         font-size: 1.75em;*/
