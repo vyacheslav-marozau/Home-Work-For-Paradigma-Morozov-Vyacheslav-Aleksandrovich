@@ -64,7 +64,7 @@
         $('.main__content__body__mobile').toggleClass('active');
         });
      $('.RoundCross').click(function(event) {
-         $('.RoundCross, .leftSidebarMobile, .leftSidebarMobilePopup').toggleClass('activate');
+         $('.RoundCross, .leftSidebarMobile').toggleClass('activate');
          $('body').toggleClass('lock');
      });
      $('.callMe').click(function(event) {

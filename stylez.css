@@ -144,7 +144,6 @@ ul.menu-main li > * {
 }
 .price-catalog {
     width: 13vw;
-    /*height: 4.0601vh;*/
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -158,7 +157,6 @@ ul.menu-main li > * {
     text-align: center;
     position: relative;
     color: #12C868;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 0.9166em;
     line-height: 1.1818;
@@ -166,7 +164,6 @@ ul.menu-main li > * {
 .pdfDownloadLink {
     display: flex;
     flex-basis: 10.5vw;
-    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 1em;
     line-height: 1.25;
@@ -730,477 +727,9 @@ input#user_phone::-webkit-input-placeholder {
         background: url("./images/background-image-mobile-320-600.png") 0 0 no-repeat fixed;
     }
 }
-@media (min-width: 768px) and (max-width: 1279px) {}
+@media (min-width: 769px) and (max-width: 1279px) {}
 .header__body__mobile {
     display: none;
-}
-@media (max-width: 767px) and (orientation: portrait) {
-
-    body.lock {
-        overflow: hidden;
-    }
-
-    .menu-main, .hat {
-        display: none;
-    }
-
-    .logoImage {
-        max-width: 24.511vw;
-        z-index: 2;
-    }
-
-    .telefonBlock {
-        z-index: 2;
-    }
-
-    .wrapper {
-        max-width: 100vw;
-        min-height: 100vh;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .container {
-        max-width: none;
-    }
-
-    header {
-        position: fixed;
-        width: 97vw;
-        height: 10.5vh;
-        max-width: 100vw;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        z-index: 50;
-    }
-
-    header:before {
-        content: '';
-        position: absolute;
-        width: 100%; /*83.125%;*/
-        height: 100%;
-        top: 0;
-        left: 0;
-        background: #fff;
-        z-index: 2;
-    }
-
-    .header__body__mobile {
-        display: flex;
-        justify-content: space-between;
-        height: 80px;
-        align-items: center;
-        position: relative;
-        /*z-index: 2;*/
-    }
-
-    .header__burger {
-        display: block;
-        position: relative;
-        width: 40px;
-        height: 30px;
-        z-index: 3;
-    }
-
-    .header__burger:before, .header__burger:after {
-        content: '';
-        background: #1C1C1C;
-        position: absolute;
-        width: 100%;
-        height: 5px;
-        left: 0;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-    }
-
-    .header__burger:before {
-        top: 0;
-    }
-
-    .header__burger:after {
-        bottom: 0;
-    }
-
-    .header__burger span {
-        position: absolute;
-        background: #1C1C1C;
-        left: 0;
-        width: 100%;
-        height: 5px;
-        top: 13px;
-        transition: all 0.3s ease-in-out 0s;
-    }
-
-    .header__burger.active:before {
-        transform: rotate(45deg);
-        top: 13px;
-    }
-
-    .header__burger.active:after {
-        transform: rotate(-45deg);
-        bottom: 13px;
-    }
-
-    .header__burger.active span {
-        transform: scale(0);
-    }
-    .header__burger.activate {
-        pointer-events: none;
-    }
-    .Header__menu {
-        top: -100%;
-        position: fixed;
-        overflow: auto;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 88%;
-        transition: all 0.5s ease-out 0s;
-        /* background: #18b5a4;*/
-    }
-
-    .Header__menu.active {
-        top: 19.2035vw;
-    }
-
-    .Header__list {
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        display: flex;
-        position: relative;
-        z-index: 2;
-        list-style: none;
-        font-size: 1.3054vw;
-        color: #1C1C1C;
-    }
-
-    .Header__list li {
-        font-size: 30px;
-    }
-
-    .homeImage {
-        width: 36px;
-        height: 34px;
-    }
-
-    li.descriptionContainer {
-        font-size: 23px;
-        width: 71vw;
-    }
-
-    .descriptionContainer {
-        width: 63.155vw;
-        text-align: center;
-    }
-
-    .pdfDownloadLink {
-        flex-basis: 52vw;
-        font-size: 24px;
-    }
-
-    .price-catalog {
-        width: 83vw;
-        justify-content: space-evenly;
-    }
-
-    .answerOnline {
-        font-size: 24px;
-        width: 30vw;
-        flex-basis: 19vh;
-    }
-
-    .answerInMessengers {
-        justify-content: space-between;
-        flex-basis: 20vw;
-    }
-
-    .iconDisk {
-        flex-basis: 14vw;
-        height: 14vw;
-        border-radius: 50px;
-    }
-
-    .messengers {
-        width: 55vw;
-    }
-
-    .smallDisk {
-        flex-basis: 1.0589vw;
-        height: 1.0589vw;
-    }
-
-    .messengers > li.viber img, .messengers > li.whatsup img {
-        /*flex-basis: 1.0046vw;*/
-        height: 6.9vw;
-    }
-
-    .messengers > li.telegram img {
-        height: 5vw;
-    }
-
-    .leftSidebar, .main-content {
-        display: none;
-    }
-
-    .mainContentWrapper {
-        padding-top: 12.207vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        height: 87.7929vh;
-    }
-
-    .main__content__body__mobile {
-        display: flex;
-        flex-direction: column;
-        height: 90.7929vh;
-        width: 100vw;
-        justify-content: space-evenly;
-        align-items: center;
-        opacity: 1;
-        transition: all 0.3s ease-in 0s;
-    }
-
-    .main__content__body__mobile.active {
-        opacity: 0;
-    }
-
-    .mainHeader {
-        width: 100vw;
-        font-size: 5.7441vw;
-        line-height: 1.5454;
-        text-align: center;
-    }
-
-    .mainHeaderRounds {
-        width: 75vw;
-    }
-
-    .greenRound100, .greenRound75, .greenRound50, .greenRound25 {
-        flex-basis: 2.8352vw;
-        height: 2.8352vw;
-        border-width: 2px;
-    }
-
-    .mainHeaderDescription {
-        width: 30vw;
-        height: 3.6111vh;
-        font-size: 1.875em;
-    }
-
-    .fingerPrint {
-        flex-basis: 3.3312vw;
-        height: 0.8427vh;
-    }
-
-    .answerSomeQuestions {;
-        font-size: 2.5vw;
-        width: 57vw;
-    }
-
-    .backGroundCalculateTheCost {
-        flex-basis: 12.2592vw;
-        width: 43.25vh;
-        justify-content: space-evenly;
-    }
-
-    .backGroundCheckInForLookingHouses {
-        flex-basis: 12.2592vw;
-        width: 43.25vh;
-        justify-content: space-evenly;
-    }
-
-    .calculateTheCostButton {
-        display: flex;
-        flex-basis: 31.69375vw;
-    }
-
-    .arrowTopRight {
-        flex-basis: 3.5vw;
-        height: 3.5vw;
-    }
-
-    .checkInForLookingHousesButton {
-        flex-basis: 26.7029vw;
-    }
-
-    .leftSidebarMobilePopup {
-        display: flex;
-        background: url("./images/form.svg");
-        width: 52.5vw;
-        opacity: 1;
-        transition: all 0.5s ease 0s;
-    }
-
-    .leftSidebarMobilePopup.activate {
-        opacity: 0;
-        transition: all 0.8s ease-in 0s;
-    }
-
-    .leftSidebarMobilePopupDescriptionBlock {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 44vw;
-        height: 12vh;
-        justify-content: space-between;
-    }
-
-    .leftSidebarMobilePopupDescription1 {
-        width: 22.25vw;
-    }
-
-    .leftSidebarMobilePopupDescription2 {
-        font-size: 1.875vw;
-        color: #b5b5b5;
-    }
-
-    .RoundCross {
-        background: #F38120;
-        border-radius: 50px;
-        width: 65px;
-        height: 65px;
-        position: relative;
-    }
-
-    .RoundCross:before, .RoundCross:after {
-        content: '';
-        background: #ffffff;
-        position: absolute;
-        width: 50%;
-        left: 50%;
-        top: 50%;
-        height: 8px;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-    }
-
-    .RoundCross:after {
-        content: '';
-        background: #ffffff;
-        position: absolute;
-        height: 50%;
-        width: 8px;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
-        transform: translateX(-50%) translateY(-30%);
-    }
-    .RoundCross:before {
-        transform: translateX(-50%) translateY(-50%);
-    }
-    /*.RoundCross:before {
-        top: 29px;
-        left: 17px;
-    }
-
-    .RoundCross:after {
-        top: 22px;
-        left: 29px;
-    }*/
-
-    .leftSidebarMobile > .RoundCross {
-        align-self: start;
-        margin-top: 4vh;
-    }
-
-    .RoundCross.activate:before {
-        top: 29px;
-        left: 17px;
-        transform: rotate(-300deg);
-    }
-
-    .RoundCross.activate:after {
-        top: 17px;
-        left: 29px;
-        transform: rotate(30deg);;
-    }
-
-    .leftSidebarMobile {
-        bottom: -100%;
-        position: fixed;
-        overflow: auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 59.3125vw;
-        height: 47.1666vh;
-        border-radius: 25px;
-        transition: all 1.5s cubic-bezier(.1, .9, .9, .1) /*cubic-bezier(0.22, 0.81, 0.01, 0.99)*/ 0s;
-        background: #ffffff;
-    }
-
-    .leftSidebarMobileList {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        list-style: none;
-        flex-basis: 23vh;
-        font-size: 2.329vw;
-        height: 39.1666vh;
-    }
-
-    .leftSidebarMobile.activate {
-        background-color: #ffe9d5;
-        bottom: 0%;
-        transition: all 1.8s cubic-bezier(.1, .9, .9, .1) 0s;
-    }
-
-    .b-popup-content {
-        flex-basis: 57.6458vw;
-        height: 52.1851vh;
-    }
-
-    .popUpHeader {
-        width: 53vw;
-    }
-
-    .popUpHeaderDescription {
-        width: 46vw;
-        font-size: 1.8333em;
-    }
-
-    .popUpHeaderGrafikRaboti {
-        font-size: 1.63em;
-        width: 46vw;
-    }
-
-    .popUpHeaderTypeTelefon {
-        font-size: 1.6333em;
-        width: 38vw;
-    }
-
-    .phone_form {
-        flex-basis: 36vw
-    }
-    .user_phone {
-        font-size: 1.6333em;
-    }
-    #user_phone {
-        padding: 8px 0px 8px 12px;
-    }
-    .background_btn_submit {
-        flex-basis: 6.8703vh;
-        width: 37.5416vw;
-    }
-    .callMePopUp {
-        display: flex;
-        flex-basis: 24.0312vw;
-    }
-    .btn_submit {
-        flex-basis: 18.0312vw;
-        margin-right: -18.0312vw;
-    }
-    .agreementFlex {
-        width: 54vw;
-    }
-    .licenseAgreementBlock {
-        flex-basis: 43.6145vw;
-    }
-    .licenseAgreementDownloadLink {
-        display: flex;
-        width: 37vw;
-    }
-    .agreement {
-        transform: scale(2.8);
-    }
 }
 @media (max-width: 1917px) {
     .popUpHeaderTypeTelefon {
@@ -1916,6 +1445,7 @@ input#user_phone::-webkit-input-placeholder {
 @media (max-width: 1406px) {
     .popUpHeader {
         width: 27.8vw;
+    }
 }
 @media (max-width: 1404px) {
     .descriptionContainer {
@@ -2517,10 +2047,411 @@ input#user_phone::-webkit-input-placeholder {
         width: 28.8vw;
     }
 }
-@media (max-width: 600px) {
+@media (orientation: portrait) and (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .menu-main, .hat {
+        display: none;
+    }
+    .logoImage {
+        max-width: 24.511vw;
+        z-index: 2;
+    }
+    .telefonBlock {
+        z-index: 2;
+    }
+    .wrapper {
+        max-width: 100vw;
+        min-height: 100vh;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container {
+        max-width: none;
+    }
+    header {
+        position: fixed;
+        width: 97vw;
+        height: 10.5vh;
+        max-width: 100vw;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        z-index: 50;
+    }
+    .header__body__mobile {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+        position: relative;
+        /*z-index: 2;*/
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 48px;
+        height: 36.024px;
+        z-index: 3;
+    }
+    .header__burger:before, .header__burger:after {
+        content: '';
+        background: #1C1C1C;
+        position: absolute;
+        width: 100%;
+        height: 5.112px;
+        left: 0;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger span {
+        position: absolute;
+        background: #1C1C1C;
+        left: 0;
+        width: 100%;
+        height: 5.112px;
+        top: 15px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 15px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 15px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.activate {
+        pointer-events: none;
+    }
+    .Header__menu {
+        top: -100%;
+        position: fixed;
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        transition: all 0.5s ease-out 0s;
+        background: #EDF2F5;
+    }
+    .Header__menu.active {
+        top: 0vw;
+    }
+    .Header__list {
+        padding-top: 8.68vh;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        position: relative;
+        z-index: 2;
+        list-style: none;
+        font-size: 1.3054vw;
+        color: #1C1C1C;
+    }
+    .Header__list li {
+        font-size: 3.5em;
+        font-weight: 600;
+    }
+    .homeImage {
+        width: 6.875vw;
+        height: 5.390625vh;
+    }
+    li.descriptionContainer {
+        font-size: 2.25em;
+        width: 71vw;
+    }
+    .descriptionContainer {
+        width: 63.155vw;
+        text-align: center;
+    }
     .pdfDownloadLink {
-        flex-basis: 50vw;
-        font-size: 21px;
+        flex-basis: 52vw;
+        font-size: 0.683971em;
+        font-weight: 600;
+    }
+    .pdfFile {
+        font-size: 0.7542em;
+    }
+    .price-catalog {
+        width: 83vw;
+        justify-content: space-evenly;
+    }
+    .answerOnlineBlock {
+        width: 27vw;
+        align-self: center;
+    }
+    .answerOnline {
+        font-size: 0.5485em;
+        width: 30vw;
+        flex-basis: 12.7vh;
+    }
+    .answerInMessengers {
+        justify-content: space-between;
+        flex-basis: 20vw;
+    }
+    .iconDisk {
+        flex-basis: 14vw;
+        height: 14vw;
+        border-radius: 50px;
+    }
+    .messengers {
+        width: 55vw;
+    }
+    .smallDisk {
+        flex-basis: 1.0589vw;
+        height: 1.0589vw;
+    }
+    .messengers > li.viber img, .messengers > li.whatsup img {
+        height: 6.9vw;
+    }
+    .messengers > li.telegram img {
+        height: 5vw;
+    }
+    .leftSidebar, .main-content {
+        display: none;
+    }
+    .mainContentWrapper {
+        padding-top: 19.207vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        height: 87.7929vh;
+    }
+    .main__content__body__mobile__content {
+        flex-basis: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .main__content__body__mobile {
+        display: flex;
+        flex-direction: column;
+        height: 61vh;
+        width: 100vw;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 1;
+        transition: all 0.3s ease-in 0s;
+    }
+    .main__content__body__mobile.active {
+        opacity: 0;
+    }
+    .grafikRaboti {
+        font-size: 1.4em;
+    }
+    .telefon {
+        font-size: 2.4em;
+    }
+    .callMe {
+        font-size: 2em;
+        border-bottom: 4.8px dotted #12C868;
+    }
+    .mainHeader {
+        text-align: center;
+        width: 71.3828vw;
+        font-size: 3.6em;
+        line-height: 1.67;
+        flex-basis: 14.5vh;
+    }
+    .mainHeaderRounds {
+        width: 62vw;
+    }
+    .greenRound100, .greenRound75, .greenRound50, .greenRound25 {
+        flex-basis: 0.91875em;
+        height: 0.91875em;
+        border-width: 2px;
+    }
+    .mainHeaderDescription {
+        width: 45vw;
+        height: 3.6111vh;
+        font-size: 2.6em;
+    }
+    .fingerPrint {
+        display: flex;
+        height: 3.8333vh;
+        width: 6.875vw;
+    }
+    .answerSomeQuestions {
+        font-size: 2.4vw;
+        flex-basis: 6vh;
+        width: 57vw;
+    }
+    .backGroundCalculateTheCost {
+        flex-basis: 12.2592vw;
+        width: 67.3828vw;
+        justify-content: space-evenly;
+    }
+    .backGroundCheckInForLookingHouses {
+        flex-basis: 12.2592vw;
+        width: 67.3828vw;
+        justify-content: space-evenly;
+    }
+    .calculateTheCostButton {
+        display: flex;
+        flex-basis: 50.69375vw;
+        font-size: 2em;
+        height: 7.074vh;
+    }
+    .arrowTopRight {
+        flex-basis: 4.5vw;
+        height: 4.5vw;
+    }
+    .checkInForLookingHousesButton {
+        display: flex;
+        flex-basis: 48.7029vw;
+        font-size: 2em;
+    }
+    .RoundCross {
+        background: #F38120;
+        border-radius: 50px;
+        width: 65px;
+        height: 65px;
+        position: relative;
+    }
+    .RoundCross:before, .RoundCross:after {
+        content: '';
+        background: #ffffff;
+        position: absolute;
+        width: 50%;
+        left: 50%;
+        top: 50%;
+        height: 8px;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+    }
+    .RoundCross:after {
+        content: '';
+        background: #ffffff;
+        position: absolute;
+        height: 50%;
+        width: 8px;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+        transform: translateX(-50%) translateY(-30%);
+    }
+    .RoundCross:before {
+        transform: translateX(-50%) translateY(-50%);
+    }
+    .leftSidebarMobile > .RoundCross {
+        align-self: start;
+        margin-top: 4vh;
+    }
+    .RoundCross.activate:before {
+        top: 29px;
+        left: 17px;
+        transform: rotate(-300deg);
+    }
+    .RoundCross.activate:after {
+        top: 17px;
+        left: 29px;
+        transform: rotate(30deg);
+    }
+    .leftSidebarMobile {
+        bottom: -36%;
+        position: fixed;
+        overflow: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 57vw;
+        height: 47.1666vh;
+        border-radius: 25px;
+        transition: all 1.5s cubic-bezier(.1, .9, .9, .1) 0s;
+        background: #ffffff;
+    }
+    .leftSidebarMobileList {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        list-style: none;
+        flex-basis: 17vh;
+        font-size: 2em;
+        height: 39.1666vh;
+    }
+    .leftSidebarMobile.activate {
+        background-color: #ffffff;
+        bottom: 0%;
+        transition: all 0.8s cubic-bezier(.1, .9, .9, .1) 0s;
+    }
+    .b-popup-content {
+        flex-basis: 57.6458vw;
+        height: 52.1851vh;
+    }
+    .popUpHeader {
+        width: 53vw;
+    }
+    .popUpHeaderDescription {
+        width: 46vw;
+        font-size: 1.8333em;
+    }
+    .popUpHeaderGrafikRaboti {
+        font-size: 1.63em;
+        width: 46vw;
+    }
+    .popUpHeaderTypeTelefon {
+        font-size: 1.6333em;
+        width: 38vw;
+    }
+    .phone_form {
+        flex-basis: 36vw
+    }
+    .user_phone {
+        font-size: 1.6333em;
+    }
+    #user_phone {
+        padding: 8px 0px 8px 12px;
+    }
+    .background_btn_submit {
+        flex-basis: 6.8703vh;
+        width: 37.5416vw;
+    }
+    .callMePopUp {
+        display: flex;
+        flex-basis: 24.0312vw;
+    }
+    .btn_submit {
+        flex-basis: 18.0312vw;
+        margin-right: -18.0312vw;
+    }
+    .agreementFlex {
+        width: 54vw;
+    }
+    .licenseAgreementBlock {
+        flex-basis: 43.6145vw;
+    }
+    .licenseAgreementDownloadLink {
+        display: flex;
+        width: 37vw;
+    }
+    .agreement {
+        transform: scale(2.8);
+    }
+}
+
+@media (orientation: portrait) and (max-width: 707px) {
+    .calculateTheCostButton {
+        font-size: 1.8em;
+    }
+    .checkInForLookingHousesButton {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 600px) {
+    }
+    .pdfDownloadLink {
+        flex-basis: 50vw;/*
+        font-size: 1.75em;*/
     }
 }
 @media (max-width: 500px) {
@@ -2538,11 +2469,11 @@ input#user_phone::-webkit-input-placeholder {
     }
 
     .Header__list li {
-        font-size: 23px;
+        font-size: 1.9166em;
     }
     .pdfDownloadLink {
         flex-basis: 48vw;
-        font-size: 17px;
+        font-size: 1.4166em;
     }
     .answerOnline {
         font-size: 18px;
@@ -2564,4 +2495,6 @@ input#user_phone::-webkit-input-placeholder {
     }
 
 }
-    @media (max-width: 320px) {}}
+@media (max-width: 320px) {
+
+}
