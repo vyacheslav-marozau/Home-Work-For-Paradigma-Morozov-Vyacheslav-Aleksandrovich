@@ -68,7 +68,11 @@
          $('body').toggleClass('lock');
      });
      $('.callMe').click(function(event) {
-         $('.header__burger').toggleClass('activate');
+         $('.header__burger, .callMe').toggleClass('activate');
+         $('body').toggleClass('lock');
+     });
+     $('.closingCrossLink').click(function(event) {
+         $('.callMe').toggleClass('activate');
          $('body').toggleClass('lock');
      });
 
