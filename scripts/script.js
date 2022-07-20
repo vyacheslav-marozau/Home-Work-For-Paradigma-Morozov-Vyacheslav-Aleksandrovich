@@ -1,10 +1,8 @@
- $(document).ready(function(){
-    //Скрыть PopUp при загрузке страницы
-    PopUpHide();
+$(document).ready(function(){
 });
     //Функция отображения PopUp
     function PopUpShow(){
-    $("#popup1").show();
+    $("#popup1").css( "display", "flex" );
 }
     //Функция скрытия PopUp
     function PopUpHide(){
