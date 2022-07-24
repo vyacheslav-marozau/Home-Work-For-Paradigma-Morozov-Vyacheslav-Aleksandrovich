@@ -1,6 +1,10 @@
-* {margin: 0;
-padding: 0;}
-html, body {height: 100%}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
 @font-face {
     font-family: Montserrat;
     src: url('./fonts/montserrat-regular.eot');
@@ -44,7 +48,7 @@ body {
     padding: 0 0.9375vh;
 }
 header {
-    max-width: 80.3645vw;
+    max-width: 92.3645vw;
     display: flex;
     flex-direction: column;
     flex-grow: 0.6;
@@ -65,8 +69,6 @@ header {
     font-size: 1.1666em;
     line-height: 1.4;
     text-align: center;
-    /*margin: 4.074vh 10.5208vw 6.1111vh 9.1145vw;*/
-    /*padding: 0;*/
     list-style-type: none;
 }
 .menu-main li {
@@ -76,8 +78,6 @@ header {
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-   /* padding-bottom: 20px;*/
-    /*margin: 0 1.55vw 0 1.55vw;*/
     transition: color .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -109,19 +109,25 @@ header {
     justify-content: space-around;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
-    /* width: 81.7708vw;
-    height: 13.7037vh;*/
     background: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     line-height: 1.4;
     text-align: center;
-    /*margin: 4.074vh 10.5208vw 6.1111vh 9.1145vw;*/
-    /* padding: 0;*/
     list-style-type: none;
 }
 .hat li {
     display: flex;
+}
+.hat-content1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 33.33vw;
+}
+.hat-content2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-basis: 33.33vw;
 }
 ul.menu-main li > * {
     flex-wrap: wrap;
@@ -171,7 +177,7 @@ ul.menu-main li > * {
     text-decoration: none;
     border-bottom: 1px dotted #12C868;
 }
-.logoImage {
+.logoImageDesktop {
     max-width: 100%;
 }
 .logoImageAdaptive {
@@ -694,65 +700,7 @@ input#user_phone::-webkit-input-placeholder {
     display: none;
 }
 @media (max-height: 898px) and (max-width: 1920px) {
-    .mainContentWrapper {
-        display: flex;
-        justify-content: space-between;
-        width: 72vw;
-    }
-    .main-content {
-        justify-content: space-between;
-        width: 46vw;
-    }
-    .mainHeader {
-        flex-basis: 5.6111vh;
-        width: 65.5937vw;
-        font-size: 2.1833em;
-    }
-    .mainHeaderRounds {
-        width: 16.6421vw;
-        height: 48px;
-    }
-    .mainHeaderDescription {
-        width: 12.8229vw;
-        font-size: 2em;
-        height: 7.6111vh;
-    }
-    .buttons {
-        height: 101px;
-    }
-    .backGroundCalculateTheCost, .backGroundCheckInForLookingHouses {
-        height: 88px;
-    }
-    .answerSomeQuestionsContainer {
-        width: 54vw;
-        justify-content: space-between;
-        height: 74px;
-        align-items: center;
-    }
-    .answerSomeQuestions {
-        width: 33vw;
-        flex-basis: 49.187vw;
-        font-size: 1.25666em;
-    }
-    .calculateTheCostButton, .checkInForLookingHousesButton {
-        height: unset;
-    }
-    .fingerPrint {
-        height: 17px;
-    }
-    .mainHeader {
-        flex-basis: 8.6111vh;
-    }
-}
-@media (min-width: 768px) and (max-width: 1440px) {
-    .logoImageAdaptive {
-        height: 93px;
-        width: 141px;
-    }
-    .logoImage {
-        max-height: 93px;
-        max-width: 141px;
-    }
+
 }
 @media (max-width: 960px) and (max-height: 1800px) {
     body {
@@ -1838,6 +1786,231 @@ input#user_phone::-webkit-input-placeholder {
         align-items: center;
     }
 }
+@media (min-width: 769px) and (max-width: 1200px) {
+    .hat {
+        align-items: center;
+        width: 99vw;
+        flex-direction: column;
+        height: 32vh;
+    }
+    .hat-content1 {
+        flex-basis: auto;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .descriptionContainer {
+        flex: 3;
+        align-items: center;
+    }
+    .description {
+        width: auto;
+    }
+    .description b {
+        display: contents;
+    }
+    .professional {
+        width: auto;
+    }
+    .price-catalog {
+        flex: 2;
+        justify-content: space-evenly;
+    }
+    .pdfFile {
+        width: auto;
+        flex: 1;
+    }
+    .pdfDownloadLink {
+        flex: 5;
+    }
+    .hat-content2 {
+         flex-basis: auto;
+        width: 100vw;
+        align-items: center;
+        height: 13vh;
+     }
+    .answerInMessengers {
+        flex: 2;
+        font-size: 2.1em;
+        height: 9vh;
+    }
+    .telefonBlock {
+        flex: 3;
+    }
+    .answerOnlineBlock {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+    .logoImageAdaptive {
+        height: 78px;
+        width: 188px;
+    }
+    .logoImageDesktop {
+        height: 78px;
+        width: 188px;
+    }
+    .messengers {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .grafikRaboti {
+        font-size: 1.9em;
+    }
+    .telefon {
+        font-size: 2.8333em;
+    }
+    .callMe {
+        font-size: 1.9em;
+    }
+    .menu-main {
+        display: none;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 48px;
+        height: 36.024px;
+        z-index: 3;
+    }
+    .header__burger:before, .header__burger:after {
+        content: '';
+        background: #1C1C1C;
+        position: absolute;
+        width: 100%;
+        height: 5.112px;
+        left: 0;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger span {
+        position: absolute;
+        background: #1C1C1C;
+        left: 0;
+        width: 100%;
+        height: 5.112px;
+        top: 15px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .header__body__mobile {
+        display: flex;
+        justify-content: end;
+    }
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 15px;
+    }
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 15px;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+    .header__burger.activate {
+        pointer-events: none;
+    }
+    .logoImage, .telefonBlock {
+        display: none;
+    }
+    .Header__menu {
+        display: flex;
+        position: fixed;
+        top: -100vh;
+        transition: all 2s cubic-bezier(1, 0.25, 0, 1.29) 0s;
+        width: 100vw;
+        justify-content: center;
+        z-index: 3;
+    }
+    .Header__menu.active {
+        top: 0;
+        transition: all 1s ease-in-out 0s;
+    }
+    .Header__list {
+        border: 2px solid #ffA500;
+        border-radius: 50px;
+        background: #FFFFFF;
+        list-style: none;
+        font-size: 3.5em;
+        text-align: center;
+        padding: 48px;
+    }
+    .Header__list li {
+        color: #1C1C1C;
+        transition: all 0.6s ease-out 0s;
+        padding: 10px 0;
+    }
+    .Header__list li:hover{
+        color: #feb386;
+        text-decoration: underline;
+        transition: all 0.9s ease 0s;
+    }
+    .descriptionContainer, .price-catalog, .answerInMessengers {
+        display: none;
+    }
+    .homeImage {
+        width: 44px;
+        height: 46px;
+    }
+    .mainContentWrapper {
+        flex-direction: column-reverse;
+    }
+    .main-content {
+        height: 76vh;
+        align-items: center;
+    }
+    .mainHeader {
+        flex-basis: 15vh;
+        width: 64.5937vw;
+        text-align: center;
+        margin: 0;
+    }
+    .mainHeaderRounds {
+        width: 385px;
+    }
+    .mainHeaderDescription {
+        width: 335px;
+    }
+    .buttons {
+        flex-direction: column;
+        flex-basis: 32vh;
+    }
+    .backGroundCalculateTheCost, .backGroundCheckInForLookingHouses {
+        width: 335px;
+        flex-basis: 100px;
+    }
+    .calculateTheCostButton, .checkInForLookingHousesButton {
+        flex-basis: 243px;
+    }
+    .answerSomeQuestionsContainer {
+        width: 1100px;
+        height: 6vh;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+    }
+    .answerSomeQuestions {
+        flex-basis: 462px;
+        height: 4.1481vh;
+        margin: 0;
+        color: #00ff00;
+    }
+    .mainContentWrapper {
+        flex-basis: 112vh;
+    }
+    .leftSidebar {
+        flex-basis: 50.5416vw;
+    }
+    .leftSidebar li {
+        width: 91.9854vw;
+        font-size: 2.1666em;
+    }
+}
 @media (max-width: 1191px) {
     #user_phone {
         font-size: 2.3em;
@@ -1888,43 +2061,17 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeader {
         width: 45.5937vw;
     }
-    .mainHeaderDescription {
-        width: 28.9229vw;
-    }
-    .answerSomeQuestions {
-        flex-basis: 18vw;
-    }
-    .backGroundCalculateTheCost {
-        flex-basis: 27.3612vw;
-    }
-    .backGroundCheckInForLookingHouses {
-        flex-basis: 25.1479vw;
-    }
     .price-catalog {
         width: 22vw;
     }
 }
 @media (max-width: 1139px) {
-    .pdfDownloadLink {
-        flex-basis: 17.2vw;
-    }
-    .leftSidebar li {
-        width: 14.9854vw;
-    }
+
     .mainHeader {
         width: 46.5937vw;
     }
     .descriptionContainer {
         flex-basis: 17.077vw;
-    }
-    .calculateTheCostButton {
-        flex-basis: 22.27vw;
-    }
-    .mainHeaderDescription {
-        width: 29.9229vw;
-    }
-    .mainHeaderRounds {
-        width: 34.1421vw;
     }
 }
 @media (max-width: 1133px) {
@@ -1956,12 +2103,6 @@ input#user_phone::-webkit-input-placeholder {
     .price-catalog {
         width: 23vw;
     }
-    .pdfDownloadLink {
-        flex-basis: 18.2vw;
-    }
-    .answerOnlineBlock {
-        width: 15vw;
-    }
     .popUpHeaderDescription {
         width: 27.6vw;
     }
@@ -1978,23 +2119,11 @@ input#user_phone::-webkit-input-placeholder {
     }
 }
 @media (max-width: 1086px) {
-    .checkInForLookingHousesButton {
-        flex-basis: 20.6vw;
-    }
-    .main-content {
-        height: 55vh;
-    }
     .mainHeader {
         width: 48.5937vw;
     }
-    .mainHeaderDescription {
-        width: 30.9229vw;
-    }
     .menu-main li {
         font-size: 0.7em;
-    }
-    .main-content {
-        height: 55vh;
     }
     .leftSidebar {
         justify-content: space-between;
@@ -2013,14 +2142,6 @@ input#user_phone::-webkit-input-placeholder {
     }
     .callMePopUp {
         font-size: 1.5em;
-    }
-    .answerSomeQuestions {
-        flex-basis: 19vw;
-    }
-}
-@media (max-width: 1070px) {
-    .calculateTheCostButton {
-        flex-basis: 22.87vw;
     }
 }
 @media (max-width: 1068px) {
@@ -2041,9 +2162,6 @@ input#user_phone::-webkit-input-placeholder {
     .descriptionContainer {
         flex-basis: 17.577vw;
     }
-    .leftSidebar li {
-        width: 15.9854vw;
-    }
     .container {
         max-width: 1019px;
     }
@@ -2052,22 +2170,13 @@ input#user_phone::-webkit-input-placeholder {
     .popUpHeaderGrafikRaboti {
         width: 28.2vw;
     }
-    .pdfDownloadLink {
-        flex-basis: 18.8vw;
-    }
-    ption {
+    .mainHeaderDescription {
         width: 31.9229vw;
-    }
-    .mainHeaderRounds {
-        width: 35.1421vw;
     }
 }
 @media (max-width: 1042px) {
     .popUpHeaderTypeTelefon {
         width: 28vw;
-    }
-    .calculateTheCostButton {
-        flex-basis: 23.47vw;
     }
     .mainHeader {
         width: 50.5937vw;
@@ -2085,13 +2194,20 @@ input#user_phone::-webkit-input-placeholder {
     .descriptionContainer {
         flex-basis: 18.3vw;
     }
-    .mainHeaderRounds {
-        width: 36.1421vw;
-    }
 }
 @media (max-width: 1027px) {
     .popUpHeaderGrafikRaboti {
         width: 28.8vw;
+    }
+}
+@media (max-width: 1020px) {
+    .mainHeader {
+        width: 536px;
+    }
+}
+@media (max-width: 840px) {
+    .price-catalog {
+        flex: 2 0 6.8vw;
     }
 }
 @media (orientation: portrait) and (max-width: 768px) {
@@ -2234,10 +2350,6 @@ input#user_phone::-webkit-input-placeholder {
     .price-catalog {
         width: 83vw;
         justify-content: space-evenly;
-    }
-    .answerOnlineBlock {
-        width: 29vw;
-        align-self: center;
     }
     .answerOnline {
         font-size: 0.5485em;
