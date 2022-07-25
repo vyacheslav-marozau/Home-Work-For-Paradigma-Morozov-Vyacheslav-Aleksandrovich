@@ -186,8 +186,6 @@ ul.menu-main li > * {
     align-self: center;
 }
 .answerInMessengers {
-    /*width: 8.3255vw;
-    height: 6.7981vh;*/
     display: flex;
     flex-direction: column;
     flex-basis: 10vw;
@@ -515,8 +513,7 @@ input#user_phone::-webkit-input-placeholder {
     flex-direction: column;
     justify-content: space-evenly;
     flex-basis: 8.5416vw;
-
-    height: 58.0092vh;
+    gap: 25px;
     text-align: center;
 }
 .leftSidebar li {
@@ -541,7 +538,6 @@ input#user_phone::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 52vh;
     z-index: 2;
 }
 .mainHeader {
@@ -682,7 +678,6 @@ input#user_phone::-webkit-input-placeholder {
 .answerSomeQuestions {
     display: flex;
     flex-basis: 12.187vw;
-    height: 12.1481vh;
     font-style: normal;
     font-size: 1.1666em;
     line-height: 1.57;
@@ -1789,16 +1784,15 @@ input#user_phone::-webkit-input-placeholder {
 @media (min-width: 769px) and (max-width: 1200px) {
     .hat {
         align-items: center;
-        width: 99vw;
+        width: 100vw;
         flex-direction: column;
-        height: 32vh;
+        gap: 25px;
     }
     .hat-content1 {
         flex-basis: auto;
         justify-content: space-between;
         width: 100vw;
     }
-
     .descriptionContainer {
         flex: 3;
         align-items: center;
@@ -1824,15 +1818,15 @@ input#user_phone::-webkit-input-placeholder {
         flex: 5;
     }
     .hat-content2 {
-         flex-basis: auto;
+        flex-basis: auto;
         width: 100vw;
         align-items: center;
-        height: 13vh;
+        gap: 20px;
      }
     .answerInMessengers {
         flex: 2;
         font-size: 2.1em;
-        height: 9vh;
+        gap: 20px;
     }
     .telefonBlock {
         flex: 3;
@@ -1921,7 +1915,7 @@ input#user_phone::-webkit-input-placeholder {
     .Header__menu {
         display: flex;
         position: fixed;
-        top: -100vh;
+        top: -100%;
         transition: all 2s cubic-bezier(1, 0.25, 0, 1.29) 0s;
         width: 100vw;
         justify-content: center;
@@ -1959,13 +1953,13 @@ input#user_phone::-webkit-input-placeholder {
     }
     .mainContentWrapper {
         flex-direction: column-reverse;
+        width: 100vw;
     }
     .main-content {
-        height: 76vh;
         align-items: center;
+        gap: 20px;
     }
     .mainHeader {
-        flex-basis: 15vh;
         width: 64.5937vw;
         text-align: center;
         margin: 0;
@@ -1978,7 +1972,7 @@ input#user_phone::-webkit-input-placeholder {
     }
     .buttons {
         flex-direction: column;
-        flex-basis: 32vh;
+        gap: 16px;
     }
     .backGroundCalculateTheCost, .backGroundCheckInForLookingHouses {
         width: 335px;
@@ -1989,14 +1983,12 @@ input#user_phone::-webkit-input-placeholder {
     }
     .answerSomeQuestionsContainer {
         width: 1100px;
-        height: 6vh;
         justify-content: center;
         gap: 50px;
         align-items: center;
     }
     .answerSomeQuestions {
         flex-basis: 462px;
-        height: 4.1481vh;
         margin: 0;
         color: #00ff00;
     }
@@ -2009,6 +2001,40 @@ input#user_phone::-webkit-input-placeholder {
     .leftSidebar li {
         width: 91.9854vw;
         font-size: 2.1666em;
+    }
+}
+@media (max-height: 627px) and (max-width: 1200px) {
+    .Header__list {
+        font-size: 2.5em;
+    }
+}
+@media (max-height: 520px) and (max-width: 1200px) {
+    .Header__list {
+        font-size: 1.5em;
+        padding: 24px;
+    }
+    .homeImage {
+        width: 33px;
+        height: 35px;
+    }
+}
+@media (max-height: 416px) and (max-width: 1200px) {
+    .Header__list {
+        flex-direction: row;
+        font-size: 0.5em;
+        padding: 12px;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+    .homeImage {
+        width: 22px;
+        height: 23px;
+    }
+}
+@media (max-height: 70px) and (max-width: 1200px) {
+    .Header__menu {
+        top: -145%;
     }
 }
 @media (max-width: 1191px) {
@@ -2170,9 +2196,6 @@ input#user_phone::-webkit-input-placeholder {
     .popUpHeaderGrafikRaboti {
         width: 28.2vw;
     }
-    .mainHeaderDescription {
-        width: 31.9229vw;
-    }
 }
 @media (max-width: 1042px) {
     .popUpHeaderTypeTelefon {
@@ -2188,9 +2211,6 @@ input#user_phone::-webkit-input-placeholder {
     }
 }
 @media (max-width: 1032px) {
-    .mainContentWrapper {
-        width: 101vw;
-    }
     .descriptionContainer {
         flex-basis: 18.3vw;
     }
@@ -2423,7 +2443,6 @@ input#user_phone::-webkit-input-placeholder {
         width: 71.3828vw;
         font-size: 3.6em;
         line-height: 1.67;
-        flex-basis: 14.5vh;
     }
     .mainHeaderRounds {
         width: 62vw;
@@ -3395,9 +3414,6 @@ input#user_phone::-webkit-input-placeholder {
     }
 }
 @media (orientation: portrait) and (max-width: 407px) {
-    .answerSomeQuestions {
-        height: 13.1481vh;
-    }
     .main__content__body__mobile {
         height: 64vh
     }
@@ -3628,9 +3644,6 @@ input#user_phone::-webkit-input-placeholder {
 @media (orientation: portrait) and (max-width: 346px) {
     .mainHeaderDescription {
         font-size: 1.3em;
-    }
-    .answerSomeQuestions {
-        height: 15.1481vh;
     }
     .calculateTheCostButton, .checkInForLookingHousesButton {
         font-size: 0.1em;
