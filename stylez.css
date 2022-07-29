@@ -22,9 +22,12 @@ body {
     padding: 0;
     border: 0;
 }
-.block {}
+.block {
+    display: flex;
+    justify-content: center;
+}
 .wrapper {
-    max-width: 100vw;
+    width: 1920px;
     min-height: 100vh;
     overflow: hidden;
     display: flex;
@@ -40,18 +43,15 @@ body {
     display: flex;
 }
 .container {
-    max-width: 80.3645vw;
-    flex: 1 1 auto;
-   /* flex-basis: 80.3645vw;*/
     display: flex;
     flex-direction: column;
     padding: 0 0.9375vh;
 }
 header {
-    max-width: 92.3645vw;
+    /*max-width: 92.3645vw;*/
     display: flex;
     flex-direction: column;
-    flex-grow: 0.6;
+    /*flex-grow: 0.6;*/
     justify-content: space-evenly;
     align-items: stretch;
 }
@@ -73,44 +73,19 @@ header {
 }
 .menu-main li {
     display: flex;
-
     font-size: 1.1666em;
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
     transition: color .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .menu-main .current, .menu-main li:hover{color: #feb386; text-decoration: underline}
-.menu-main li:before,
-.menu-main li:after {
-    content: "";
-    height: 4px;
-    top: auto;
-    right: 50%;
-    bottom: -5px;
-    left: 50%;
-    transition: .8s;
-}
-.menu-main li:hover:before, .menu-main .current:before {left: 0;}
-.menu-main li:hover:after, .menu-main .current:after {right: 0;}
-/*
-@media (max-width: 550px) {
-    .menu-main {padding-top: 0;}
-    .menu-main li {display: flex;}
-    .menu-main li:after {content: none;}
-    .menu-main a {
-        padding: 25px 0 20px;
-        margin: 0 30px;
-    }
-}*/
 .hat {
     display: flex;
     justify-content: space-around;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     background: #fff;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     line-height: 1.4;
     text-align: center;
@@ -122,12 +97,12 @@ header {
 .hat-content1 {
     display: flex;
     justify-content: space-evenly;
-    flex-basis: 33.33vw;
+    gap: 25px;
 }
 .hat-content2 {
     display: flex;
     justify-content: space-evenly;
-    flex-basis: 33.33vw;
+    gap: 70px;
 }
 ul.menu-main li > * {
     flex-wrap: wrap;
@@ -145,11 +120,14 @@ ul.menu-main li > * {
     font-size: 1em;
     line-height: 1.67;
 }
+.description b {
+    display: contents;
+}
 .professional {
     display: flex;
 }
 .price-catalog {
-    width: 13vw;
+    gap: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -157,9 +135,7 @@ ul.menu-main li > * {
 }
 .pdfFile {
     display: flex;
-    flex-basis: 2.2838vw;
     border-radius: 30px;
-    /* background-color: #FFD700FF;*/
     text-align: center;
     position: relative;
     color: #12C868;
@@ -169,7 +145,6 @@ ul.menu-main li > * {
 }
 .pdfDownloadLink {
     display: flex;
-    flex-basis: 10.5vw;
     font-weight: 700;
     font-size: 1em;
     line-height: 1.25;
@@ -181,15 +156,15 @@ ul.menu-main li > * {
     max-width: 100%;
 }
 .logoImageAdaptive {
-    height: 6.5104vw;
     width: 9.7916vw;
     align-self: center;
 }
 .answerInMessengers {
     display: flex;
     flex-direction: column;
-    flex-basis: 10vw;
     justify-content: space-evenly;
+    flex-basis: 215px;
+    gap: 5px;
 }
 .answerOnlineBlock {
     display: flex;
@@ -210,20 +185,17 @@ ul.menu-main li > * {
 }
 .messengers {
     display: flex;
+    gap: 5px;
     justify-content: space-evenly;
 }
-.messengers img {
-  /*  top: 50%;
-    left: 50%;*/
-}
+
 .iconDisk {
     display: flex;
-    flex-basis: 2.2838vw;
+    flex-basis: 44px;
     justify-content: center;
     align-items: center;
-    height: 2.2838vw;
+    height: 44px;
     border-radius: 30px;
-   /* background-color: #FFD700FF;*/
     text-align: center;
     position: relative;
 }
@@ -238,18 +210,18 @@ ul.menu-main li > * {
 }
 .messengers>li.viber img {
     display: flex;
-    flex-basis: 1.0046vw;
-    height: 1.0046vw;
+    flex-basis: 24px;
+    height: 24px;
 }
 .messengers>li.whatsup img {
     display: flex;
-    flex-basis: 1.038vw;
-    height: 1.038vw;
+    flex-basis: 24px;
+    height: 24px;
 }
 .messengers>li.telegram img {
     display: flex;
-    flex-basis: 0.9135vw;
-    height: 0.9135vw;
+    flex-basis: 20px;
+    height: 20px;
 }
 .telefonBlock{
     display: flex;
@@ -262,6 +234,9 @@ ul.menu-main li > * {
     font-weight: 700;
     font-size: 1em;
     line-height: 1.25;
+}
+.grafikRaboti b {
+    display: contents;
 }
 .telefon {
     display: flex;
@@ -318,8 +293,8 @@ ul.menu-main li > * {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    flex-basis:  31.6458vw;
-    height: 69.1851vh;
+    flex-basis:  32.6458vw;
+    height: 81.1851vh;
 
     padding: 1.8518vh 1.0416vw 10px 0.9259vh;
     background-color: #c5c5c5;
@@ -544,7 +519,7 @@ input#user_phone::-webkit-input-placeholder {
     display: flex;
     flex-direction: column;
     flex-basis: 20.6111vh;
-    width: 31.5937vw;
+    width: 588px;
     font-style: normal;
     font-weight: 300;
     font-size: 4.1833em;
@@ -694,8 +669,13 @@ input#user_phone::-webkit-input-placeholder {
 .Header__menu, .main__content__body__mobile {
     display: none;
 }
-@media (max-height: 898px) and (max-width: 1920px) {
-
+.header__body__mobile {
+    display: none;
+}
+@media (min-width: 1921px) {
+    body {
+        background: no-repeat center/contain url(images/BG.png);
+    }
 }
 @media (max-width: 960px) and (max-height: 1800px) {
     body {
@@ -717,10 +697,6 @@ input#user_phone::-webkit-input-placeholder {
         background: no-repeat center/cover url("./images/background-image-mobile-320-600.png");
     }
 }
-@media (min-width: 769px) and (max-width: 1279px) {}
-.header__body__mobile {
-    display: none;
-}
 @media (max-width: 1917px) {
     .popUpHeaderTypeTelefon {
         width: 19.4vw;
@@ -734,22 +710,22 @@ input#user_phone::-webkit-input-placeholder {
         width: 8.4854vw;
     }
 }
-@media (max-width: 1913px) {
+@media (min-width: 1898px) and (max-width: 1913px) {
     .popUpHeader {
         font-size: 3.3em;
     }
 }
-@media (max-width: 1897px) {
+@media (min-width: 1891px) and (max-width: 1897px) {
     .popUpHeaderGrafikRaboti {
         width: 22vw;
     }
 }
-@media (max-width: 1890px) {
+@media (min-width: 1881px) and (max-width: 1890px) {
     .popUpHeaderTypeTelefon {
         width: 19.6vw;
     }
 }
-@media (max-width: 1880px) {
+@media (min-width: 1878px) and (max-width: 1880px) {
     .popUpHeaderGrafikRaboti {
         width: 22.2vw;
     }
@@ -760,17 +736,17 @@ input#user_phone::-webkit-input-placeholder {
         width: 24.2vw;
     }
 }
-@media (max-width: 1877px) {
+@media (min-width: 1868px) and (max-width: 1877px) {
     .calculateTheCostButton {
         flex-basis: 12.79375vw;
     }
 }
-@media (max-width: 1867px) {
+@media (min-width: 1864px) and (max-width: 1867px) {
     .leftSidebar li {
         width: 8.5854vw;
     }
 }
-@media (max-width: 1863px) {
+@media (min-width: 1849px) and (max-width: 1863px) {
     .calculateTheCostButton {
         flex-basis: 12.896vw;
     }
@@ -787,12 +763,12 @@ input#user_phone::-webkit-input-placeholder {
         font-size: 3.2em;
     }
 }
-@media (max-width: 1848px) {
+@media (min-width: 1846px) and (max-width: 1848px) {
     .calculateTheCostButton {
         flex-basis: 12.996vw;
     }
 }
-@media (max-width: 1845px) {
+@media (min-width: 1835px) and (max-width: 1845px) {
     .leftSidebar li {
         width: 8.6854vw;
     }
@@ -800,12 +776,12 @@ input#user_phone::-webkit-input-placeholder {
         width: 32.5937vw;
     }
 }
-@media (max-width: 1834px) {
+@media (min-width: 1831px) and (max-width: 1834px) {
     .calculateTheCostButton {
         flex-basis: 13.096vw;
     }
 }
-@media (max-width: 1830px) {
+@media (min-width: 1826px) and (max-width: 1830px) {
     .popUpHeaderGrafikRaboti {
         width: 23.2vw;
     }
@@ -819,48 +795,32 @@ input#user_phone::-webkit-input-placeholder {
         width: 19vw;
     }
 }
-@media (max-width: 1825px) {
+@media (min-width: 1821px) and (max-width: 1825px) {
     .leftSidebar li {
         width: 8.7854vw;
     }
 }
-@media (max-width: 1820px) {
+@media (min-width: 1807px) and (max-width: 1820px) {
     .calculateTheCostButton {
         flex-basis: 13.196vw;
     }
 }
-@media (max-width: 1809px) {
-    .price-catalog {
-        width: 14vw;
-    }
-    .pdfDownloadLink {
-        display: flex;
-        flex-basis: 10.55vw;
-    }
-}
-@media (max-width: 1806px) {
+@media (min-width: 1805px) and (max-width: 1806px) {
     .calculateTheCostButton {
         flex-basis: 13.296vw;
     }
 }
-@media (max-width: 1804px) {
+@media (min-width: 1801px) and (max-width: 1804px) {
     .leftSidebar li {
         width: 8.8854vw;
     }
 }
-@media (max-width: 1800px) {
-    .price-catalog {
-        width: 15vw;
-    }
-    .pdfDownloadLink {
-        display: flex;
-        flex-basis: 11.55vw;
-    }
+@media (min-width: 1794px) and (max-width: 1800px) {
     .popUpHeader {
         font-size: 3.1em;
     }
 }
-@media (max-width: 1793px) {
+@media (min-width: 1790px) and (max-width: 1793px) {
     .calculateTheCostButton {
         flex-basis: 13.396vw;
     }
@@ -868,12 +828,12 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 21.3612vw;
     }
 }
-@media (max-width: 1789px) {
+@media (min-width: 1784px) and (max-width: 1789px) {
     .mainHeader {
     width: 33.5937vw;
     }
 }
-@media (max-width: 1783px) {
+@media (min-width: 1780px) and (max-width: 1783px) {
     .leftSidebar li {
         width: 8.9854vw;
     }
@@ -888,32 +848,32 @@ input#user_phone::-webkit-input-placeholder {
         width: 18.6vw;
     }
 }
-@media (max-width: 1779px) {
+@media (min-width: 1770px) and (max-width: 1779px) {
     .calculateTheCostButton {
         flex-basis: 13.496vw;
     }
 }
-@media (max-width: 1769px) {
+@media (min-width: 1767px) and (max-width: 1769px) {
     .licenseAgreementDownloadLink {
         width: 29vw;
     }
 }
-@media (max-width: 1766px) {
+@media (min-width: 1765px) and (max-width: 1766px) {
     .calculateTheCostButton {
         flex-basis: 13.596vw;
     }
 }
-@media (max-width: 1764px) {
+@media (min-width: 1754px) and (max-width: 1764px) {
     .leftSidebar li {
         width: 9.0854vw;
     }
 }
-@media (max-width: 1753px) {
+@media (min-width: 1745px) and (max-width: 1753px) {
     .calculateTheCostButton {
         flex-basis: 13.696vw;
     }
 }
-@media (max-width: 1744px) {
+@media (min-width: 1742px) and (max-width: 1744px) {
     .leftSidebar li {
         width: 9.1854vw;
     }
@@ -928,17 +888,17 @@ input#user_phone::-webkit-input-placeholder {
         width: 20.8vw;
     }
 }
-@media (max-width: 1741px) {
+@media (min-width: 1737px) and (max-width: 1741px) {
     .calculateTheCostButton {
         flex-basis: 13.796vw;
     }
 }
-@media (max-width: 1736px) {
+@media (min-width: 1729px) and (max-width: 1736px) {
     .mainHeader {
         width: 34.5937vw;
     }
 }
-@media (max-width: 1728px) {
+@media (min-width: 1727px) and (max-width: 1728px) {
     .calculateTheCostButton {
         flex-basis: 13.896vw;
     }
@@ -949,12 +909,12 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 14.0312vw;
     }
 }
-@media (max-width: 1727px) {
+@media (min-width: 1726px) and (max-width: 1727px) {
     .checkInForLookingHousesButton {
         flex-basis: 11.8029vw;
     }
 }
-@media (max-width: 1725px) {
+@media (min-width: 1717px) and (max-width: 1725px) {
     .leftSidebar li {
         width: 9.3854vw;
     }
@@ -966,7 +926,7 @@ input#user_phone::-webkit-input-placeholder {
         width: 23vw;
     }
 }
-@media (max-width: 1716px) {
+@media (min-width: 1713px) and (max-width: 1716px) {
     .mainHeaderDescription {
         width: 18.9229vw;
     }
@@ -980,7 +940,7 @@ input#user_phone::-webkit-input-placeholder {
         width: 20.2vw;
     }
 }
-@media (max-width: 1712px) {
+@media (min-width: 1697px) and (max-width: 1712px) {
     .checkInForLookingHousesButton {
         flex-basis: 12.0029vw;
     }
@@ -991,7 +951,7 @@ input#user_phone::-webkit-input-placeholder {
         width: 20vw;
     }
 }
-@media (max-width: 1696px) {
+@media (min-width: 1692px) and (max-width: 1696px) {
     descriptionContainer {
         flex-basis: 11.877vw;
     }
@@ -999,7 +959,7 @@ input#user_phone::-webkit-input-placeholder {
         justify-content: space-between;
     }
 }
-@media (max-width: 1691px) {
+@media (min-width: 1688px) and (max-width: 1691px) {
     .calculateTheCostButton {
         flex-basis: 14.296vw;
     }
@@ -1019,12 +979,12 @@ input#user_phone::-webkit-input-placeholder {
         width: 21.4vw;
     }
 }
-@media (max-width: 1687px) {
+@media (min-width: 1668px) and (max-width: 1687px) {
     .popUpHeader {
         font-size: 2.9em;
     }
 }
-@media (max-width: 1667px) {
+@media (min-width: 1646px) and (max-width: 1667px) {
     .calculateTheCostButton {
         flex-basis: 14.57vw;
     }
@@ -1038,14 +998,7 @@ input#user_phone::-webkit-input-placeholder {
         width: 36.5937vw;
     }
 }
-@media (max-width: 1645px) {
-    .price-catalog {
-        width: 16vw;
-    }
-    .pdfDownloadLink {
-        display: flex;
-        flex-basis: 12.55vw;
-    }
+@media (min-width: 1644px) and (max-width: 1645px) {
     .background_btn_submit {
         justify-content: space-evenly;
     }
@@ -1053,7 +1006,7 @@ input#user_phone::-webkit-input-placeholder {
         height: 66.1851vh;
     }
 }
-@media (max-width: 1643px) {
+@media (min-width: 1637px) and (max-width: 1643px) {
     .popUpHeaderGrafikRaboti {
         width: 22vw;
     }
@@ -1062,7 +1015,7 @@ input#user_phone::-webkit-input-placeholder {
         margin-right: -13.0312vw;
     }
 }
-@media (max-width: 1636px) {
+@media (min-width: 1630px) and (max-width: 1636px) {
     .backGroundCalculateTheCost {
         flex-basis: 23.3612vw;
     }
@@ -1087,7 +1040,7 @@ input#user_phone::-webkit-input-placeholder {
         font-size: 2.8em;
     }
 }
-@media (max-width: 1629px) {
+@media (min-width: 1621px) and (max-width: 1629px) {
     .phone_form {
         flex-basis: 15vw;
     }
@@ -1100,12 +1053,12 @@ input#user_phone::-webkit-input-placeholder {
         height: 62.1851vh;
     }
 }
-@media (max-width: 1620px) {
+@media (min-width: 1614px) and (max-width: 1620px) {
     #user_phone {
         width: 21vw;
     }
 }
-@media (max-width: 1613px) {
+@media (min-width: 1599px) and (max-width: 1613px) {
     .calculateTheCostButton {
         flex-basis: 14.97vw;
     }
@@ -1125,17 +1078,17 @@ input#user_phone::-webkit-input-placeholder {
         width: 19.5416vw;
     }
 }
-@media (max-width: 1598px) {
+@media (min-width: 1597px) and (max-width: 1598px) {
     .popUpHeaderGrafikRaboti {
         width: 22.6vw;
     }
 }
-@media (max-width: 1596px) {
+@media (min-width: 1594px) and (max-width: 1596px) {
     .licenseAgreementDownloadLink {
         width: 24vw;
     }
 }
-@media (max-width: 1593px) {
+@media (min-width: 1590px) and (max-width: 1593px) {
     .calculateTheCostButton {
         flex-basis: 15.47vw;
     }
@@ -1158,7 +1111,7 @@ input#user_phone::-webkit-input-placeholder {
         width: 38.5937vw;
     }
 }
-@media (max-width: 1589px) {
+@media (min-width: 1579px) and (max-width: 1589px) {
     .callMePopUp {
         flex-basis: 15.0312vw;
     }
@@ -1167,22 +1120,19 @@ input#user_phone::-webkit-input-placeholder {
         margin-right: -15.0312vw;
     }
 }
-@media (max-width: 1578px) {
+@media (min-width: 1576px) and (max-width: 1578px) {
     .popUpHeaderTypeTelefon {
         width: 20.8vw;
     }
 }
-@media (max-width: 1575px) {
+@media (min-width: 1571px) and (max-width: 1575px) {
     .popUpHeader {
         font-size: 2.7em;
     }
 }
-@media (max-width: 1570px) {
+@media (min-width: 1557px) and (max-width: 1570px) {
     .answerSomeQuestions {
         flex-basis: 12.6vw;
-    }
-    .answerOnlineBlock {
-        width: 11vw;
     }
     .calculateTheCostButton {
         flex-basis: 15.67vw;
@@ -1194,23 +1144,20 @@ input#user_phone::-webkit-input-placeholder {
         width: 10.5854vw;
     }
 }
-@media (max-width: 1556px) {
+@media (min-width: 1552px) and (max-width: 1556px) {
     .popUpHeaderGrafikRaboti {
         width: 23.2vw;
     }
 }
-@media (max-width: 1551px) {
+@media (min-width: 1545px) and (max-width: 1551px) {
     .descriptionContainer {
         flex-basis: 13.677vw;
     }
 }
 
-@media (max-width: 1544px) {
+@media (min-width: 1542px) and (max-width: 1544px) {
     .answerSomeQuestions {
         flex-basis: 12.8vw;
-    }
-    .answerOnlineBlock {
-        width: 12vw;
     }
     .calculateTheCostButton {
         flex-basis: 15.87vw;
@@ -1219,22 +1166,22 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 11.877vw;
     }
 }
-@media (max-width: 1541px) {
+@media (min-width: 1534px) and (max-width: 1541px) {
     #user_phone {
         width: 22vw;
     }
 }
-@media (max-width: 1533px) {
+@media (min-width: 1530px) and (max-width: 1533px) {
     .popUpHeaderTypeTelefon {
         width: 21.4vw;
     }
 }
-@media (max-width: 1529px) {
+@media (min-width: 1521px) and (max-width: 1529px) {
     .licenseAgreementDownloadLink {
         width: 25vw;
     }
 }
-@media (max-width: 1520px) {
+@media (min-width: 1517px) and (max-width: 1520px) {
     .answerSomeQuestions {
         flex-basis: 13.1vw;
     }
@@ -1254,7 +1201,7 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 16vw;
     }
 }
-@media (max-width: 1518px) {
+@media (min-width: 1500px) and (max-width: 1518px) {
     .popUpHeader {
         font-size: 2.6em;
     }
@@ -1278,18 +1225,7 @@ input#user_phone::-webkit-input-placeholder {
         height: 58.1851vh;
     }
 }
-@media (max-width: 1513px) {
-    .price-catalog {
-        width: 17vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 14.677vw;
-    }
-    .container {
-        max-width: 83.3645vw;
-    }
-}
-@media (max-width: 1499px) {
+@media (min-width: 1484px) and (max-width: 1499px) {
     .descriptionContainer {
         flex-basis: 13.077vw;
     }
@@ -1306,7 +1242,7 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 13.3vw;
     }
 }
-@media (max-width: 1483px) {
+@media (min-width: 1479px) and (max-width: 1483px) {
     .callMePopUp {
         font-size: 2em;
     }
@@ -1362,18 +1298,95 @@ input#user_phone::-webkit-input-placeholder {
         font-size: 2.5em;
     }
 }
+@media (max-width: 1460px) {
+    .hat {
+        align-items: center;
+        width: 100vw;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .hat-content1 {
+        justify-content: center;
+        flex-basis: auto;
+        align-items: center;
+        gap: 80px;
+    }
+    .descriptionContainer {
+        align-items: center;
+        flex-basis: auto;
+    }
+    .description {
+        width: auto;
+    }
+    .description b {
+        display: contents;
+    }
+    .professional {
+        width: auto;
+    }
+    .price-catalog {
+        justify-content: flex-start;
+    }
+    .pdfFile {
+        width: auto;
+    }
+    .hat-content2 {
+        flex-basis: auto;
+        align-items: center;
+        gap: 80px;
+    }
+    .answerInMessengers {
+        flex: 3;
+        font-size: 2.1em;
+        gap: 20px;
+        align-items: center;
+    }
+    .telefonBlock {
+        /*flex: 2;*/
+    }
+    .answerOnlineBlock {
+        justify-content: center;
+        gap: 15px;
+    }
+    .answerOnline {
+        width: 239px;
+    }
+    .smallDisk {
+        flex-basis: 5px;
+        height: 5px;
+    }
+    .logoImageAdaptive {
+        height: 78px;
+        width: 188px;
+    }
+    .logoImageDesktop {
+        height: 78px;
+        width: 188px;
+    }
+    .messengers {
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+    }
+    .iconDisk {
+        width: 44px;
+    }
+    .grafikRaboti {
+        font-size: 1.9em;
+    }
+    .telefon {
+        font-size: 2.8333em;
+    }
+    .callMe {
+        font-size: 1.9em;
+    }
+}
 @media (max-width: 1447px) {
     .calculateTheCostButton {
     flex-basis: 16.67vw;
     }
     .checkInForLookingHousesButton {
         flex-basis: 14.2vw;
-    }
-    .container {
-        max-width: 86.3645vw;
-    }
-    .price-catalog {
-        width: 18vw;
     }
     .answerSomeQuestions {
         flex-basis: 13.7vw;
@@ -1388,12 +1401,6 @@ input#user_phone::-webkit-input-placeholder {
     }
     .checkInForLookingHousesButton {
         flex-basis: 14.4vw;
-    }
-    .answerSomeQuestions {
-        flex-basis: 13.9vw;
-    }
-    .answerOnlineBlock {
-        justify-content: space-between;
     }
 }
 @media (max-width: 1433px) {
@@ -1438,9 +1445,6 @@ input#user_phone::-webkit-input-placeholder {
     }
 }
 @media (max-width: 1404px) {
-    .descriptionContainer {
-        flex-basis: 14.077vw;
-    }
     .calculateTheCostButton {
         flex-basis: 17.27vw;
     }
@@ -1549,10 +1553,6 @@ input#user_phone::-webkit-input-placeholder {
     .answerSomeQuestions {
         flex-basis: 15vw;
     }
-    .container {
-        max-width: none;
-        align-items: center;
-    }
     .mainContentWrapper {
         display: flex;
         justify-content: space-between;
@@ -1642,18 +1642,11 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeaderRounds {
         width: 30.1421vw;
     }
-    .answerOnlineBlock {
-        width: 13vw;
-    }
-    .iconDisk {
-        flex-basis: 3.8838vw;
-        height: 3.8838vw;
-    }
     .messengers>li.viber img, .messengers>li.whatsup img  {
-        height: 2.0046vw;
+        height: 24px;
     }
     .messengers>li.telegram img  {
-        height: 1.4135vw;
+        height: 20px;
     }
 }
 @media (max-width: 1291px) {
@@ -1662,9 +1655,6 @@ input#user_phone::-webkit-input-placeholder {
     }
 }
 @media (max-width: 1286px) {
-    .descriptionContainer {
-        flex-basis: 15.077vw;
-    }
     .mainHeader {
         width: 42.5937vw;
     }
@@ -1752,27 +1742,11 @@ input#user_phone::-webkit-input-placeholder {
     .hat {
         width: 90vw;
     }
-    .descriptionContainer {
-        flex-basis: 16.077vw;
-    }
-    .price-catalog {
-        width: 20vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 16.677vw;
-    }
-    .messengers {
-        width: 14vw;
-        justify-content: space-between;
-    }
     .menu-main {
         width: 90vw;
     }
     .mainHeaderDescription {
         width: 27.9229vw;
-    }
-    .answerOnlineBlock {
-        width: 14vw;
     }
     .calculateTheCostButton {
         align-items: center;
@@ -1781,8 +1755,8 @@ input#user_phone::-webkit-input-placeholder {
         align-items: center;
     }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
-    .hat {
+@media (min-width: 769px) and (max-width: 1200px), (orientation: landscape) and (max-width: 768px){
+    /*.hat {
         align-items: center;
         width: 100vw;
         flex-direction: column;
@@ -1794,7 +1768,7 @@ input#user_phone::-webkit-input-placeholder {
         width: 100vw;
     }
     .descriptionContainer {
-        flex: 3;
+        flex: 5 0;
         align-items: center;
     }
     .description {
@@ -1807,21 +1781,17 @@ input#user_phone::-webkit-input-placeholder {
         width: auto;
     }
     .price-catalog {
-        flex: 2;
-        justify-content: space-evenly;
+        flex: 4 0;
+        justify-content: flex-start;
     }
     .pdfFile {
         width: auto;
-        flex: 1;
-    }
-    .pdfDownloadLink {
-        flex: 5;
     }
     .hat-content2 {
         flex-basis: auto;
         width: 100vw;
         align-items: center;
-        gap: 20px;
+        gap: 5px;
      }
     .answerInMessengers {
         flex: 2;
@@ -1856,7 +1826,7 @@ input#user_phone::-webkit-input-placeholder {
     }
     .callMe {
         font-size: 1.9em;
-    }
+    }*/
     .menu-main {
         display: none;
     }
@@ -2003,6 +1973,12 @@ input#user_phone::-webkit-input-placeholder {
         font-size: 2.1666em;
     }
 }
+@media (orientation: landscape) and (max-width: 768px){
+    .hat-content1, .hat-content2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media (max-height: 627px) and (max-width: 1200px) {
     .Header__list {
         font-size: 2.5em;
@@ -2087,17 +2063,10 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeader {
         width: 45.5937vw;
     }
-    .price-catalog {
-        width: 22vw;
-    }
 }
 @media (max-width: 1139px) {
-
     .mainHeader {
         width: 46.5937vw;
-    }
-    .descriptionContainer {
-        flex-basis: 17.077vw;
     }
 }
 @media (max-width: 1133px) {
@@ -2125,9 +2094,6 @@ input#user_phone::-webkit-input-placeholder {
     }
     .main-content {
         justify-content: space-between;
-    }
-    .price-catalog {
-        width: 23vw;
     }
     .popUpHeaderDescription {
         width: 27.6vw;
@@ -2185,9 +2151,6 @@ input#user_phone::-webkit-input-placeholder {
     .mainHeader {
         width: 49.5937vw;
     }
-    .descriptionContainer {
-        flex-basis: 17.577vw;
-    }
     .container {
         max-width: 1019px;
     }
@@ -2210,11 +2173,6 @@ input#user_phone::-webkit-input-placeholder {
         width: 29.6vw;
     }
 }
-@media (max-width: 1032px) {
-    .descriptionContainer {
-        flex-basis: 18.3vw;
-    }
-}
 @media (max-width: 1027px) {
     .popUpHeaderGrafikRaboti {
         width: 28.8vw;
@@ -2227,7 +2185,7 @@ input#user_phone::-webkit-input-placeholder {
 }
 @media (max-width: 840px) {
     .price-catalog {
-        flex: 2 0 6.8vw;
+        flex: 3 0;
     }
 }
 @media (orientation: portrait) and (max-width: 768px) {
@@ -2360,7 +2318,6 @@ input#user_phone::-webkit-input-placeholder {
     }
     .pdfDownloadLink {
         border-bottom: 4.8px dotted #12C868;
-        flex-basis: 52vw;
         font-size: 0.953971em;
         font-weight: 600;
     }
@@ -2368,7 +2325,6 @@ input#user_phone::-webkit-input-placeholder {
         font-size: 0.7542em;
     }
     .price-catalog {
-        width: 83vw;
         justify-content: space-evenly;
     }
     .answerOnline {
@@ -2381,8 +2337,8 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 20vw;
     }
     .iconDisk {
-        flex-basis: 14vw;
-        height: 14vw;
+        flex-basis: 44px;
+        height: 44px;
         border-radius: 50px;
     }
     .messengers {
@@ -2902,11 +2858,7 @@ input#user_phone::-webkit-input-placeholder {
 }
 @media (orientation: portrait) and (max-width: 601px) {
     .pdfDownloadLink {
-        flex-basis: 41vw;
         font-size: 0.753971em;
-    }
-    .price-catalog {
-        width: 63vw;
     }
     .answerSomeQuestions {
         width: 57vw;
@@ -3169,15 +3121,15 @@ input#user_phone::-webkit-input-placeholder {
         flex-basis: 25vw;
     }
     .iconDisk {
-        flex-basis: 12vw;
-        height: 12vw;
+        flex-basis: 44px;
+        height: 44px;
         border-radius: 50px;
     }
     .messengers>li.viber img, .messengers>li.whatsup img {
-        height: 5.9vw;
+        height: 24px;
     }
     .messengers>li.telegram img {
-        height: 4vw;
+        height: 20px;
     }
     .description {
         font-size: 0.8em;
@@ -3454,12 +3406,6 @@ input#user_phone::-webkit-input-placeholder {
     }
 }
 @media (orientation: portrait) and (max-width: 396px) {
-    .pdfDownloadLink {
-        flex-basis: 49vw;
-    }
-    .price-catalog {
-        width: 78vw;
-    }
     li.descriptionContainer {
         width: 68vw;
     }
@@ -3473,12 +3419,6 @@ input#user_phone::-webkit-input-placeholder {
     }
     li.descriptionContainer {
         width: 69vw;
-    }
-    .price-catalog {
-        width: 81vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 50vw;
     }
 }
 @media (orientation: portrait) and (max-width: 384px) {
@@ -3494,9 +3434,6 @@ input#user_phone::-webkit-input-placeholder {
 @media (orientation: portrait) and (max-width: 380px) {
     .price-catalog {
         width: 82vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 51vw;
     }
 }
 @media (orientation: portrait) and (max-width: 379px) {
@@ -3538,9 +3475,6 @@ input#user_phone::-webkit-input-placeholder {
     .price-catalog {
         width: 83vw;
     }
-    .pdfDownloadLink {
-        flex-basis: 52vw;
-    }
     .callMePopUp {
         flex-basis: 37.0312vw;
         font-size: 1em;
@@ -3567,9 +3501,6 @@ input#user_phone::-webkit-input-placeholder {
 @media (orientation: portrait) and (max-width: 368px) {
     .price-catalog {
         width: 85vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 54vw;
     }
     .answerOnline {
         flex-basis: 22vh;
@@ -3632,9 +3563,6 @@ input#user_phone::-webkit-input-placeholder {
     .price-catalog {
         width: 87vw;
     }
-    .pdfDownloadLink {
-        flex-basis: 56vw;
-    }
 }
 @media (orientation: portrait) and (max-width: 349px) {
     .calculateTheCostButton {
@@ -3657,9 +3585,6 @@ input#user_phone::-webkit-input-placeholder {
 @media (orientation: portrait) and (max-width: 339px) {
     .price-catalog {
         width: 89vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 58vw;
     }
 }
 @media (orientation: portrait) and (max-width: 338px) {
@@ -3714,9 +3639,6 @@ input#user_phone::-webkit-input-placeholder {
     }
     .price-catalog {
         width: 91vw;
-    }
-    .pdfDownloadLink {
-        flex-basis: 60vw;
     }
     .callMePopUp {
         flex-basis: 42.0312vw;
